@@ -5,12 +5,14 @@ import About from './components/About/index';
 import Projects from './components/Projects/index';
 import Skills from './components/Skills/index';
 import Contact from './components/Contact/index';
+import Navigation from './components/Navigation/index'
 
 import './App.css';
 
 function App() {
 	return (
 		<div className='App'>
+      <Navigation />
 			<Switch>
 				<Route path='/about'>
 					<About />
