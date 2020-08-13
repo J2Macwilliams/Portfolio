@@ -1,11 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Home from './components/Home/index';
-import About from './components/About/index';
-import Projects from './components/Projects/index';
-
-import Contact from './components/Contact/index';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 import './App.css';
 import NavBar from './NavBar';
@@ -15,9 +13,6 @@ function App() {
 		<div className='App'>
 			<NavBar />
 			<Switch>
-				<Route path='/about'>
-					<About />
-				</Route>
 				<Route path='/projects'>
 					<Projects />
 				</Route>
