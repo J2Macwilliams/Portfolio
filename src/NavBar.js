@@ -18,7 +18,7 @@ const NavBar = () => {
 	return (
 		<Menu>
 			<Box
-				bg={colorMode === 'light' ? 'orange.500' : ''}
+				bg={colorMode === 'light' ? 'orange.500' : 'black'}
                 border={colorMode === 'light' ? '' : '.6px solid white'}
                 w='100%'
                 position='fixed'
