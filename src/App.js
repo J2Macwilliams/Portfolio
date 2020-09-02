@@ -18,29 +18,21 @@ function App() {
 			<NavBar />
 			<Box
 				flex='1 0 auto'
-				p='10% 7%'
-				background={
-					colorMode === 'light'
-						? 'linear-gradient(211deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 100%)'
-						: 'linear-gradient(211deg, rgba(0,0,0,1) 0%, rgba(71,71,71,1) 100%)'
-				}
+				p='0 9%'
+				// p={['0 9%','10% 9%']}
+				background={colorMode === 'light' ? 'white' : 'black'}
 			>
-				
-				{/* <Box
-				p='0 2%'
-				textAlign='center'
-				> */}
-					<Switch>
-						<Route path='/projects'>
-							<Projects />
-						</Route>
-						<Route path='/about'>
-							<Contact />
-						</Route>
-						<Route path='/'>
-							<Home />
-						</Route>
-					</Switch>
+				<Switch>
+					<Route path='/projects'>
+						<Projects />
+					</Route>
+					<Route path='/about'>
+						<Contact />
+					</Route>
+					<Route exact path='/'>
+						<Home />
+					</Route>
+				</Switch>
 				{/* </Box> */}
 			</Box>
 

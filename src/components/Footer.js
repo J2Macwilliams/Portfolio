@@ -34,7 +34,7 @@ const Footer = () => {
 				'gmail',
 				'jeremytemplate',
 				e.target,
-				'user_BOsRbg7YX5mYkeA6OigdX'
+				`${process.env.REACT_APP_EMAIL_KEY}`
 			)
 			.then(
 				result => {
@@ -52,9 +52,10 @@ const Footer = () => {
 			bg={colorMode === 'light' ? 'black' : 'white'}
 			w='100%'
 			p='1%'
-			position='relative'
-			// left='0px'
-			// bottom='0px'
+			position='fixed'
+			// zIndex='1'
+			left='0px'
+			bottom='0px'
 			// m='.5%'
 			color={colorMode === 'light' ? 'white' : 'black'}
 		>
