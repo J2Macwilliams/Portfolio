@@ -4,7 +4,7 @@ import { Flex, Box, Image, Heading, Text, Icon, Link } from '@chakra-ui/core';
 import { FaGithub } from 'react-icons/fa';
 // Image
 import './project_images.css';
-import splash from '../../assets/Life/splash.png';
+import game from '../../assets/Life/game.png';
 import alive from '../../assets/Life/alive.png';
 
 const Life = ({ colorMode, fadeIn, fadeOut }) => {
@@ -64,10 +64,11 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 					</Box>
 				</Box>
 				<Box id='Images' 
-				// borderWidth={colorMode === 'light' ? '': '1px'}
+				
+				
 					size={['','2xl','4xl','6xl']} 
 					m={['0 0 55% ', '0 5% ']}>
-						<Image className='bottom' src={splash}/>
+						<Image className='bottom' src={game}/>
 						<Image className='top' src={alive} />
 					</Box>
 			</Flex>
