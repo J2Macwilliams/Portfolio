@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link as RLink } from 'react-router-dom';
-
-import {
-	
-	Link,
-	Icon,
-	useColorMode,
-	Flex,
-	Box,
-	
-} from '@chakra-ui/core';
+import gsap from 'gsap';
+import { Link, Icon, useColorMode, Flex, Box } from '@chakra-ui/core';
 
 const NavBar = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
-
+	
+	useEffect(() => {
+		gsap.from('.darkMode', 3, {
+		opacity: 1,
+		x: -800,
+		rotate: 900,
+		ease: 'bounce.out',
+	});
+	}, []);
+	
 	return (
-		<Box w='100%' position='fixed' >
+		<Box w='100%' position='fixed' zIndex='1'>
 			<Box
 				p={[1, 2, 4, 4]}
 				bg={colorMode === 'light' ? 'white' : 'black'}
@@ -51,8 +52,13 @@ const NavBar = () => {
 					</Link>
 				</Flex>
 			</Box>
-			<Box p='.5%' textAlign='right'>
+			<Box
+				p='.5%'
+				bg={colorMode === 'light' ? 'white' : 'black'}
+				textAlign='right'
+			>
 				<Icon
+					className='darkMode'
 					size='1.6rem'
 					// color={colorMode === 'light' ? '#Dark' : '#FFF'}
 					name={colorMode === 'light' ? 'moon' : 'sun'}
