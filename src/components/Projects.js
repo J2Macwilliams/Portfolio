@@ -1,16 +1,18 @@
-import React, {useRef} from 'react';
-import { useIntersection } from 'react-use';
-// import { Flex } from '@chakra-ui/core';
+import React from 'react';
+
+import { Flex, Box, useColorMode, Heading } from '@chakra-ui/core';
+
+import GOK from './Projects/GOK';
+import D8 from './Projects/D8';
+import J2 from './Projects/J2';
+import Life from './Projects/Life'
+import GH from './Projects/GH'
+
 import gsap from 'gsap';
 const Projects = () => {
-	
-	const sectionRef = useRef(null);
-	const intersection = useIntersection(sectionRef, {
-		root: null,
-		rootMargin: '400px',
-		threshold: 1,
-	});
+	const { colorMode } = useColorMode();
 
+	// GSAP fns
 	const fadeIn = element => {
 		gsap.to(element, 1, {
 			opacity: 1,
@@ -29,12 +31,27 @@ const Projects = () => {
 			ease: 'power4.out',
 		});
 	};
+
 	return (
-		<>
-		
-		</>
+		<Box zIndex='.7'>
+			<Box m={['18% 0', '9%']}>
+				<Heading
+					textAlign='center'
+					fontSize={['4xl', '6xl']}
+					color={colorMode === 'light' ? 'black' : 'silver'}
+				>
+					Projects
+				</Heading>
+			</Box>
+			<Flex direction='column' justify='center'>
+				<GOK colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+				<D8 colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+				<J2 colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+				<Life colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+				<GH colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+			</Flex>
+		</Box>
 	);
 };
 
 export default Projects;
-
