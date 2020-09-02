@@ -74,9 +74,9 @@ const J2 = ({ colorMode, fadeIn, fadeOut }) => {
 										<Box size={['1.6rem', '2.2rem']} as={SiNotion} />
 									</Link>
 
-									<Link href=''>
+									{/* <Link href=''>
 										<Icon size={['1.6rem', '2.2rem']} name='external-link' />
-									</Link>
+									</Link> */}
 								</Flex>
 							</Box>
 						</Box>

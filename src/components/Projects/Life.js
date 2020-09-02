@@ -2,8 +2,10 @@ import React, { useRef } from 'react';
 import { useIntersection } from 'react-use';
 import { Flex, Box, Image, Heading, Text, Icon, Link } from '@chakra-ui/core';
 import { FaGithub } from 'react-icons/fa';
-
-import Game from '../../assets/gameOfLife.jpeg';
+// Image
+import './project_images.css';
+import splash from '../../assets/Life/splash.png';
+import alive from '../../assets/Life/alive.png';
 
 const Life = ({ colorMode, fadeIn, fadeOut }) => {
 	const fourRef = useRef(null);
@@ -18,16 +20,17 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 		: fadeIn('.four');
 
 	return (
-		<Box ref={fourRef} w='100%' h={['70vh', '35vh']} marginBottom='15%'>
+		<Box ref={fourRef} w='100%' h={['70vh', '35vh']} marginBottom={['','15%']}
+		>
 			<Flex
 				direction={['column-reverse', 'row']}
-				align='center'
+				// align='center'
 				justify='space-evenly'
 				className='four'
 			>
 				<Box w='100%'>
 					<Box textAlign='center' lineHeight='2'>
-						<Heading>Game of Lie</Heading>
+						<Heading>Game of Life</Heading>
 						<Box
 							lineHeight='1.4'
 							p='0 1%'
@@ -37,8 +40,8 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 							fontSize={['sm', 'lg']}
 						>
 							<Flex wrap='wrap' justify='space-around'>
-								<Text w={['30%', '10%']}>React</Text>
-								<Text w={['30%', '10%']}>Material-UI</Text>
+								<Text w={['30%','25%', '25%', '20%']}>React</Text>
+								<Text w={['30%','25%', '25%', '20%']}>Material-UI</Text>
 							</Flex>
 						</Box>
 						<Text fontSize={['lg', '2xl']} lineHeight='1.6' fontStyle='italic'>
@@ -60,16 +63,13 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 						</Box>
 					</Box>
 				</Box>
-				<Box
-					// maxW={['100%', '25%']}
-					rounded='lg'
-					overflow='hidden'
-					bg={colorMode === 'light' ? 'white' : ''}
-					m='2%'
-					textAlign='center'
-				>
-					<Image objectFit='cover' src={Game} alt='Game of Life' />
-				</Box>
+				<Box id='Images' 
+				// borderWidth={colorMode === 'light' ? '': '1px'}
+					size={['','2xl','4xl','6xl']} 
+					m={['0 0 55% ', '0 5% ']}>
+						<Image className='bottom' src={splash}/>
+						<Image className='top' src={alive} />
+					</Box>
 			</Flex>
 		</Box>
 	);

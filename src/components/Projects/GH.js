@@ -3,7 +3,7 @@ import { useIntersection } from 'react-use';
 import { Flex, Box, Image, Heading, Text, Icon, Link } from '@chakra-ui/core';
 import { FaGithub } from 'react-icons/fa';
 
-import GitHub from '../../assets/GitHub.jpg';
+import GitHub from '../../assets/GitHub.png';
 
 const GH = ({ colorMode, fadeIn, fadeOut }) => {
 	const fiveRef = useRef(null);
@@ -18,23 +18,20 @@ const GH = ({ colorMode, fadeIn, fadeOut }) => {
 		: fadeIn('.five');
 
 	return (
-		<Box ref={fiveRef} w='100%' h={['70vh', '35vh']} marginBottom='15%'>
+		<Box ref={fiveRef} w='100%' h={['70vh', '40vh']} marginBottom='13%'>
 			<Flex
 				direction={['column', 'row']}
 				align='center'
 				justify='space-evenly'
 				className='five'
 			>
-				<Box
-					// maxW={['100%', '40%']}
-					rounded='lg'
-					overflow='hidden'
-					bg={colorMode === 'light' ? 'white' : ''}
-					m='2%'
-					textAlign='center'
-				>
-					<Image objectFit='cover' src={GitHub} alt='GitHub Logo' />
-				</Box>
+			<Box 
+				borderWidth={colorMode === 'light' ? '': '2px'}
+					maxW={['','','','xl']} 
+					m={['1% 0', '0 5% ']}>
+						<Image src={GitHub}/>
+						
+					</Box>
 				<Box w='100%'>
 					<Box textAlign='center' lineHeight='2'>
 						<Heading>GitHub User Card</Heading>
@@ -47,8 +44,8 @@ const GH = ({ colorMode, fadeIn, fadeOut }) => {
 							fontSize={['sm', 'lg']}
 						>
 							<Flex wrap='wrap' justify='space-around'>
-								<Text w={['30%', '10%']}>React</Text>
-								<Text w={['30%', '10%']}>Material-UI</Text>
+								<Text w={['30%','25%', '25%', '20%']}>React</Text>
+								<Text w={['30%','25%', '25%', '20%']}>Material-UI</Text>
 							</Flex>
 						</Box>
 						<Text fontSize={['lg', '2xl']} lineHeight='1.6' fontStyle='italic'>

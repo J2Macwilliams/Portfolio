@@ -3,7 +3,9 @@ import { useIntersection } from 'react-use';
 import { Flex, Box, Image, Heading, Text, Icon, Link } from '@chakra-ui/core';
 import { SiNotion } from 'react-icons/si';
 // Image
-import Garden from '../../assets/Garden.jpeg';
+import './project_images.css';
+import splash from '../../assets/Garden/splash.png';
+import courses from '../../assets/Garden/courses.png';
 
 const GOK = ({ fadeIn, fadeOut, colorMode }) => {
 	const oneRef = useRef(null);
@@ -19,25 +21,15 @@ const GOK = ({ fadeIn, fadeOut, colorMode }) => {
 		: fadeIn('.one');
 
 	return (
-		<Box ref={oneRef} w='100%'
-		h = {['70vh', '35vh']}
-		marginBottom='20%'
-		>
-			<Flex direction={['column', 'row']} align='center' justify='space-evenly'>
+		<Box ref={oneRef} w='100%' h={['70vh', '35vh']} marginBottom={'13%'}>
+			<Flex direction={['column', 'row']} justify='space-evenly'>
 				<Box
-					className='one'
-					maxW={['xs', 'xs', 'md', 'md']}
-					rounded='lg'
-					overflow='hidden'
-					bg={colorMode === 'light' ? 'white' : ''}
-					m='2%'
-					textAlign='center'
+					id='Images'
+					size={['', '2xl', '4xl', '6xl']}
+					m={['0 0 75% ', '0 5% ']}
 				>
-					<Image
-						objectFit='cover'
-						src={Garden}
-						alt='Garden of Knowledge Logo'
-					/>
+					<Image className='bottom' src={splash} />
+					<Image className='top' src={courses} />
 				</Box>
 				<Box className='one' w='100%'>
 					<Box textAlign='center' lineHeight='2'>
