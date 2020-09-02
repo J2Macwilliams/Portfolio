@@ -73,7 +73,7 @@ const About = () => {
 								color={colorMode === 'light' ? 'white' : 'silver'}
 								p='2%'
 							>
-								- focused on leadership, communication, and team success with a
+								Focused on leadership, communication, and team success with a
 								background in customer service, storytelling, and production.
 							</Text>
 							<Text
