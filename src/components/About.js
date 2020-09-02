@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorMode, Box, Text, Flex, Image, Link } from '@chakra-ui/core';
+import { useColorMode, Heading, Box, Text, Flex, Image, Link } from '@chakra-ui/core';
 // import CodeWars from '../assets/CodeWars.png'
 import { Grade } from '@material-ui/icons';
 
@@ -10,16 +10,16 @@ import Jeremy from '../assets/Jeremy.jpg';
 const About = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<>
-			<Text
+		<Box m={['18% 0']}>
+			<Heading
 				fontSize='2xl'
 				fontWeight='semibold'
 				textAlign={['left', 'left', 'center', 'center']}
 			>
 				About
-			</Text>
+			</Heading>
 
-			<Flex justify='center' align='center' wrap='wrap'>
+			<Flex justify='space-around' align='center' wrap='wrap'>
 				<Box
 					maxW={['sm', 'md', 'md', 'md']}
 					borderWidth='1px'
@@ -27,13 +27,13 @@ const About = () => {
 					rounded='lg'
 					overflow='hidden'
 					bg={colorMode === 'light' ? 'white' : ''}
-					m='2%'
-					bor
+					m='3% 0'
+					
 				>
 					<Flex direction='column' justify='center' align='center'>
-						<Text fontSize='4xl' fontWeight='bold' as='b'>
+						<Heading fontSize='4xl' fontWeight='bold' as='b'>
 							Jeremy McWilliams
-						</Text>
+						</Heading>
 						<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
 					</Flex>
 				</Box>
@@ -42,35 +42,41 @@ const About = () => {
 						<Box
 							borderWidth='1px'
 							rounded='lg'
+							borderColor={colorMode === 'light' ? 'black': 'silver'}
 							overflow='hidden'
 							maxW={['sm', 'md', 'md', 'md']}
 							fontWeight='semibold'
 							letterSpacing='wide'
 							textAlign='center'
 						>
-							<Text
+							<Heading
 								fontSize='3xl'
 								fontWeight='bold'
 								background={colorMode === 'light' ? 'black' : 'white'}
 								color={colorMode === 'light' ? 'white' : 'black'}
+								// borderWidth='1px'
 							>
 								Software Developer
-							</Text>
+							</Heading>
 
 							<Text
 								fontSize='lg'
 								background={colorMode === 'light' ? 'silver' : ''}
 								color={colorMode === 'light' ? 'white' : 'silver'}
-								borderWidth='1px'
+								
 								p='2%'
 							>
 								- focused on leadership, communication, and team success with a
-								background in customer service, storytelling, and production.
+								background in customer service, storytelling, and production. 
+								
 							</Text>
+							<Text 
+							background={colorMode === 'light' ? 'white' : 'silver'}
+							color={colorMode === 'light' ? 'black' : 'black'}
+							fontWeight='bold'
+							fontSize='xl'>Work Smart! Work Hard! <br />Produce Results.</Text>
 						</Box>
-						<Box
-						maxW={['sm', 'md', 'md', 'md']}
-						>
+						<Box maxW={['sm', 'md', 'md', 'md']}>
 							<Box textAlign='center' p='3%'>
 								<Flex justify='center'>
 									<Link href='https://resume.creddle.io/resume/2nf81o2noz'>
@@ -99,7 +105,7 @@ const About = () => {
 					</Flex>
 				</Box>
 			</Flex>
-		</>
+		</Box>
 	);
 };
 
