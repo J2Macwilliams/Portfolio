@@ -26,12 +26,13 @@ const About = () => {
 					borderColor={colorMode === 'light' ? 'black' : 'white'}
 					rounded='lg'
 					overflow='hidden'
-					bg={colorMode === 'light' ? 'white' : ''}
+					bg={colorMode === 'light' ? 'black' : 'white'}
+					color={colorMode === 'light' ? 'white': 'black'}
 					m='3% 0'
 					
 				>
 					<Flex direction='column' justify='center' align='center'>
-						<Heading fontSize='4xl' fontWeight='bold' as='b'>
+						<Heading fontSize={['3xl','4xl']} fontWeight='bold' as='b'>
 							Jeremy McWilliams
 						</Heading>
 						<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
