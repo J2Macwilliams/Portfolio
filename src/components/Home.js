@@ -76,7 +76,7 @@ const Home = () => {
 				</Box>
 
 				<Box>
-					<Text fontSize={['2xl', '3xl']} className='title'>
+					<Text fontSize={['xl', '3xl']} className='title'>
 						Full Stack Software Developer
 					</Text>
 					
