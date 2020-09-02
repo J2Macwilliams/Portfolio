@@ -3,8 +3,8 @@ import { theme } from "@chakra-ui/core";
 export default  {
 	...theme,
 	fonts: {
-		heading: '"Georgia", serif',
-		body: 'system-ui, sans-serif',
+		heading: '"Romana", serif',
+		body: '"Avenir", sans-serif',
 		mono: 'Menlo, monospace',
 	},
 	fontSizes: {
