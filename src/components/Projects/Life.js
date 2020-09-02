@@ -64,7 +64,8 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 					</Box>
 				</Box>
 				<Box id='Images' 
-				// borderWidth={colorMode === 'light' ? '': '1px'}
+				
+				
 					size={['','2xl','4xl','6xl']} 
 					m={['0 0 55% ', '0 5% ']}>
 						<Image className='bottom' src={game}/>

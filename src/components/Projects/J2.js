@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useIntersection } from 'react-use';
-import { Flex, Box, Image, Heading, Text, Icon, Link } from '@chakra-ui/core';
+import { Flex, Box, Image, Heading, Text, Link } from '@chakra-ui/core';
 import { SiNotion } from 'react-icons/si';
 // Image
 import Journey2 from '../../assets/Journey2.jpeg';
