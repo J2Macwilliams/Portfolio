@@ -19,7 +19,7 @@ import {
 	Button,
 	useDisclosure,
 } from '@chakra-ui/core';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 
 const Footer = () => {
@@ -67,7 +67,9 @@ const Footer = () => {
 				<Link href='https://www.linkedin.com/in/jeremy-mcwilliams/'>
 					<Box size={['1.6rem', '2.2rem']} as={FaLinkedinIn} />
 				</Link>
-
+				<Link href='https://twitter.com/McWilliamJJ1'>
+					<Box size={['1.6rem', '2.2rem']} as={FaTwitter} />
+				</Link>
 				<Box onClick={onOpen} size={['1.6rem', '2.2rem']} as={GrMail} />
 				<Modal isOpen={isOpen} onClose={onClose}>
 					<ModalOverlay />
