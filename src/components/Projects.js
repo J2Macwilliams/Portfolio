@@ -2,13 +2,14 @@ import React from 'react';
 
 import { Flex, Box, useColorMode, Heading } from '@chakra-ui/core';
 
-import GOK from './Projects/GOK';
-import D8 from './Projects/D8';
-import J2 from './Projects/J2';
-import Life from './Projects/Life'
-import GH from './Projects/GH'
+import GOK from './Apps/GOK';
+import D8 from './Apps/D8';
+import J2 from './Apps/J2';
+import Life from './Apps/Life'
+import GH from './Apps/GH'
 
 import gsap from 'gsap';
+
 const Projects = () => {
 	const { colorMode } = useColorMode();
 
