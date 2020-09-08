@@ -132,7 +132,7 @@ const About = () => {
 							<Flex justify='space-around'wrap='wrap'>
 								<Box w={['70%','']} m={['1%', '0 7%']} textAlign='center' p='3%'>
 									<Flex justify='center'>
-										<Link href='https://resume.creddle.io/resume/2nf81o2noz'>
+										<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
 											<Text fontSize='2xl'>Resume</Text>
 											<Box size={['2rem', '3rem']} as={Grade} />
 										</Link>
