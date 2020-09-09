@@ -20,7 +20,7 @@ const D8 = ({ colorMode, fadeIn, fadeOut }) => {
 		: fadeIn('.two');
 	return (
 		<>
-			<Box ref={twoRef} w='100%' h={['70vh', '35vh']} marginBottom='13%'>
+			<Box ref={twoRef} w='100%' h={['70vh', '35vh']} marginBottom={['-15%', '13%']}>
 				<Flex
 					direction={['column-reverse', 'row']}
 					// align='center'

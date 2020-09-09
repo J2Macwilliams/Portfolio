@@ -21,7 +21,7 @@ const GOK = ({ fadeIn, fadeOut, colorMode }) => {
 		: fadeIn('.one');
 
 	return (
-		<Box ref={oneRef} w='100%' h={['70vh', '35vh']} marginBottom={'13%'}>
+		<Box ref={oneRef} w='100%' h={['70vh', '35vh']} marginBottom={['13%','13%']}>
 			<Flex direction={['column', 'row']} justify='space-evenly'>
 				<Box
 					id='Images'
@@ -57,7 +57,7 @@ const GOK = ({ fadeIn, fadeOut, colorMode }) => {
 						</Text>
 						<Box>
 							<Flex wrap='wrap' justify='space-around' align='center'>
-								<Text fontSize={['3xl', '5xl']} fontWeight='bold'>
+								<Text fontSize={['2xl', '5xl']} fontWeight='bold'>
 									Team Lead
 								</Text>
 								<Text fontSize={['2xl', '3xl']} fontWeight='semibold'>
