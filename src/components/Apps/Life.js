@@ -20,7 +20,7 @@ const Life = ({ colorMode, fadeIn, fadeOut }) => {
 		: fadeIn('.four');
 
 	return (
-		<Box ref={fourRef} w='100%' h={['70vh', '35vh']} marginBottom={['','15%']}
+		<Box ref={fourRef} w='100%' h={['70vh', '35vh']} marginBottom={['-20%','13%']}
 		>
 			<Flex
 				direction={['column-reverse', 'row']}

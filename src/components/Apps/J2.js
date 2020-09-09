@@ -3,7 +3,10 @@ import { useIntersection } from 'react-use';
 import { Flex, Box, Image, Heading, Text, Link } from '@chakra-ui/core';
 import { SiNotion } from 'react-icons/si';
 // Image
-import Journey2 from '../../assets/Journey2.jpeg';
+import './project_images.css';
+import vacations from '../../assets/Journey2/vacations.png';
+import dates from '../../assets/Journey2/dates.png';
+// import Journey2 from '../../assets/Journey2.jpeg';
 
 const J2 = ({ colorMode, fadeIn, fadeOut }) => {
 	const threeRef = useRef(null);
@@ -17,27 +20,16 @@ const J2 = ({ colorMode, fadeIn, fadeOut }) => {
 		: fadeIn('.three');
 	return (
 		<>
-			<Box ref={threeRef} w='100%' 
-			h = {['70vh', '35vh']}
-			 marginBottom='20%'
-			
-			>
-				<Flex
-					direction={['column', 'row']}
-					align='center'
-					justify='space-evenly'
-				>
+			<Box ref={threeRef} w='100%' h={['70vh', '35vh']} marginBottom={['-15%','13%']}>
+				<Flex direction={['column', 'row']} justify='space-evenly'>
 					<Box
 						className='three'
-						// w='50%'
-						maxW={['100%', '25%']}
-						rounded='lg'
-						overflow='hidden'
-						bg={colorMode === 'light' ? 'white' : ''}
-						m='2%'
-						textAlign='center'
+						id='Images'
+						size={['', '2xl', '4xl', '6xl']}
+						m={['0 0 55% ', '0 5% ']}
 					>
-						<Image objectFit='cover' src={Journey2} alt='Journey2' />
+						<Image className='bottom' src={vacations} />
+						<Image className='top' src={dates} />
 					</Box>
 					<Box w='100%' className='three'>
 						<Box textAlign='center' lineHeight='2'>
