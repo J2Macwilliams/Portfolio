@@ -64,7 +64,7 @@ const Footer = () => {
 				<Link href='https://github.com/J2Macwilliams'>
 					<Box size={['1.6rem', '2.2rem']} as={FaGithub} />
 				</Link>
-				<Link href='https://www.linkedin.com/in/jeremy-mcwilliams/'>
+				<Link href='https://www.linkedin.com/in/jeremyjmcwilliams/'>
 					<Box size={['1.6rem', '2.2rem']} as={FaLinkedinIn} />
 				</Link>
 				<Link href='https://twitter.com/McWilliamJJ1'>
