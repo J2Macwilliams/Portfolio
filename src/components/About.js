@@ -18,22 +18,17 @@ import Jeremy from '../assets/Jeremy.jpg';
 const About = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<Box m={['18% 0 10% 0', '18% 0 5% 0','18% 0 5% 0', '5.2% 0 0 0 ']}
-		
+		<Box 
+		marginTop={['25% ', '20% ','12% ', '4% ']}
+		p='5%'
 		>
-			{/* <Heading
-				fontSize='4xl'
-				fontWeight='semibold'
-				textAlign={['left', 'left', 'center', 'center']}
-				
-			>
-				About
-			</Heading> */}
+			
 
-			<Flex direction={['column','column','column', 'row']} justify='center' align='center'>
+			<Flex  direction={['column','column','column', 'row']} justify='center' align='center'>
 				<Box
-					maxW={['sm', 'md', '3xl', 'xl']}
+					maxW={['sm', 'md', '3xl', 'lg']}
 					// border='3px solid red'
+					
 					borderWidth='1px'
 					borderColor={colorMode === 'light' ? 'black' : 'white'}
 					rounded='lg'
@@ -61,7 +56,7 @@ const About = () => {
 							// background={colorMode === 'light' ? 'silver' : ''}
 							color={colorMode === 'light' ? 'white' : '#545454'}
 							textAlign='center'
-							p='2%'
+							p='1%'
 						>
 							focused on leadership, communication, and team success with a
 							background in customer service, storytelling, and production
