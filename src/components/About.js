@@ -19,8 +19,8 @@ const About = () => {
 	const { colorMode } = useColorMode();
 	return (
 		<Box 
-		marginTop={['25% ', '20% ','12% ', '4% ']}
-		p='5%'
+		// marginTop={['25% ', '20% ','12% ', '4% ']}
+		p={['15% 0','15% 0','16% 0','7% 0']}
 		>
 			
 
@@ -42,6 +42,7 @@ const About = () => {
 							Jeremy McWilliams
 						</Heading>
 						<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
+						
 						<Heading
 							fontSize='3xl'
 							fontWeight='bold'
@@ -52,7 +53,7 @@ const About = () => {
 							Full Stack Developer
 						</Heading>
 						<Text
-							fontSize='md'
+							fontSize={['sm','md','xl','lg']}
 							// background={colorMode === 'light' ? 'silver' : ''}
 							color={colorMode === 'light' ? 'white' : '#545454'}
 							textAlign='center'
@@ -61,7 +62,7 @@ const About = () => {
 							focused on leadership, communication, and team success with a
 							background in customer service, storytelling, and production
 						</Text>
-						<Text textAlign='center' fontWeight='bold' fontSize='sm' >
+						<Text textAlign='center' fontWeight='bold' fontSize={['sm','md','xl','md']} >
 							Work smart! Work hard! Produce results.
 						</Text>
 					</Flex>
@@ -79,8 +80,8 @@ const About = () => {
 
 						<Box p='1%'>
 							<Box m='1%'>
-								<Heading fontSize='xl'>Technical</Heading>
-								<Flex justify='center' wrap='wrap'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Technical</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
 									<Text m='1%' w={['30%', '20%']}>HTML</Text>
 									<Text m='1%' w={['30%', '20%']}>JS</Text>
 									<Text m='1%' w={['30%', '20%']}>React</Text>
@@ -99,16 +100,16 @@ const About = () => {
 								</Flex>
 							</Box>
 							<Box m='1%'>
-								<Heading fontSize='xl'>Database</Heading>
-								<Flex justify='center' wrap='wrap'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Database</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
 									<Text m='1%' w={['40%','30%']}>PostgreSQL</Text>
 									<Text m='1%' w={['40%','30%']}>MongoDB</Text>
 									<Text m='1%' w={['40%','30%']}>Sqlite3</Text>
 								</Flex>
 							</Box>
 							<Box m='1%'>
-								<Heading fontSize='xl'>Organizational</Heading>
-								<Flex justify='center' wrap='wrap'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Organizational</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
 									<Text m='1%' w={['30%', '20%']}>Agile</Text>
 									<Text m='1%' w={['30%', '20%']}>Notion</Text>
 									<Text m='1%' w={['30%', '20%']}>Trello</Text>
@@ -116,8 +117,8 @@ const About = () => {
 								</Flex>
 							</Box>
 							<Box m='1%'>
-								<Heading fontSize='xl'>Design</Heading>
-								<Flex justify='center' wrap='wrap'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Design</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
 									<Text m='1%' w={['26%','20%']}>Figma</Text>
 									<Text m='1%' w={['26%','20%']}>Adobe</Text>
 									<Text m='1%' w={['26%','20%']}>CSS</Text>
