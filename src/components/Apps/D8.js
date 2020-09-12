@@ -10,7 +10,9 @@ import d8apply from '../../assets/D8Picker/apply.png';
 const D8 = () => {
 	return (
 		<>
-			<Box w='100%'  marginBottom={['14%','14%','14%','18%']}>
+			<Box w='100%'  
+			marginBottom={['30%', '35%', '14%', '21%']}
+			>
 				<Flex
 					justify='space-around'
 					align='flex-start'
@@ -53,7 +55,10 @@ const D8 = () => {
 									<Text fontSize='2xl' fontWeight='bold'>
 										Full Stack Developer
 									</Text>
+									
 								</Flex>
+								<Box w='100%'>
+									<Flex justify='space-around'>
 								<Link href='https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1'>
 									<Box size={['1.6rem', '2.2rem']} as={SiNotion} />
 								</Link>
@@ -63,7 +68,10 @@ const D8 = () => {
 								<Link href='https://labs20d8picker.netlify.app/'>
 									<Icon size={['1.6rem', '2.2rem']} name='external-link' />
 								</Link>
+								</Flex>
+								</Box>
 							</Flex>
+							
 						</Box>
 					</Box>
 					<Box
