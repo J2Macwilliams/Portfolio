@@ -12,8 +12,8 @@ const GOK = () => {
 	return (
 		<Box
 			w='100%'
-			marginTop={['10%', '7%', '2%', '1%']}
-			marginBottom={['14%', '14%', '14%', '18%']}
+			// marginTop={['10%', '7%', '2%', '1%']}
+			marginBottom={['30%', '35%', '14%', '20%']}
 		>
 			<Flex
 				justify='space-around'

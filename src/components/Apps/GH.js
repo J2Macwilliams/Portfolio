@@ -8,7 +8,9 @@ import GitHub from '../../assets/GitHub.png';
 const GH = () => {
 	return (
 		<>
-			<Box w='100%' marginBottom='25%'>
+			<Box w='100%' 
+			marginBottom={['30%', '35%', '14%', '26%']}
+			>
 				<Flex
 					justify='space-around'
 					align='flex-start'

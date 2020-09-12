@@ -9,7 +9,9 @@ import alive from '../../assets/Life/alive.png';
 const Life = () => {
 	return (
 		<>
-			<Box w='100%' marginBottom={['14%', '14%', '14%', '23%']}>
+			<Box w='100%' 
+			marginBottom={['30%', '35%', '14%', '22%']}
+			>
 				<Flex
 					justify='space-around'
 					align='flex-start'

@@ -10,7 +10,9 @@ import dates from '../../assets/Journey2/dates.png';
 const J2 = () => {
 	return (
 		<>
-			<Box w='100%' marginBottom={['14%','14%','14%','20%']}>
+			<Box w='100%' 
+			marginBottom={['30%', '35%', '14%', '22%']}
+			>
 				<Flex
 					justify='space-around'
 					align='flex-start'

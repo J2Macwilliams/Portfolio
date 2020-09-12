@@ -20,7 +20,7 @@ const About = () => {
 	return (
 		<Box 
 		// marginTop={['25% ', '20% ','12% ', '4% ']}
-		p={['15% 0','15% 0','16% 0','7% 0']}
+		// p={['15% 0','15% 0','16% 0','7% 0']}
 		>
 			
 
@@ -35,7 +35,7 @@ const About = () => {
 					overflow='hidden'
 					bg={colorMode === 'light' ? 'black' : 'white'}
 					color={colorMode === 'light' ? 'white' : 'black'}
-					m='3%'
+					m='3.5%'
 				>
 					<Flex direction='column' justify='center' align='center'>
 						<Heading fontSize={['3xl', '4xl']} fontWeight='bold' as='b'>
@@ -62,12 +62,10 @@ const About = () => {
 							focused on leadership, communication, and team success with a
 							background in customer service, storytelling, and production
 						</Text>
-						<Text textAlign='center' fontWeight='bold' fontSize={['sm','md','xl','md']} >
-							Work smart! Work hard! Produce results.
-						</Text>
+						
 					</Flex>
 				</Box>
-				<Box m='3%' maxW={['sm', 'md', '2xl', 'xl']}>
+				<Box m='3.5%' maxW={['sm', 'md', '2xl', 'xl']}>
 					<Flex justify='space-around' direction='column'>
 						<Heading
 							fontSize='3xl'

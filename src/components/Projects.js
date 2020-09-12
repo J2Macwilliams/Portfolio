@@ -12,29 +12,10 @@ import gsap from 'gsap';
 
 const Projects = () => {
 	const { colorMode } = useColorMode();
-
-	// // GSAP fns
-	// const fadeIn = element => {
-	// 	gsap.to(element, 1, {
-	// 		opacity: 1,
-	// 		y: -60,
-	// 		ease: 'power4.out',
-	// 		stagger: {
-	// 			amount: 0.3,
-	// 		},
-	// 	});
-	// };
-
-	// const fadeOut = element => {
-	// 	gsap.to(element, 1, {
-	// 		opacity: 0,
-	// 		y: -40,
-	// 		ease: 'power4.out',
-	// 	});
-	// };
-
 	return (
-		<Box zIndex='.7' paddingTop={['30%','23%','','16%']}>
+		<Box zIndex='.7'
+		 paddingTop={['','','','16%']}
+		>
 			{/* <Box m={['18% 0', '9%']}>
 				<Heading
 					textAlign='center'
