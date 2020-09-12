@@ -1,8 +1,20 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
+.navbar {
+	align-items: center;
+	border-bottom: 2px solid rgb(221, 221, 221);
+	display: flex;
+	justify-content: space-around;
+}
 
-
+.navLink {
+	font-size: 2rem;
+	text-decoration: none;
+}
+.navbar > a.activeNavButton {
+	color: red;
+}

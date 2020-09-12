@@ -18,144 +18,150 @@ import Jeremy from '../assets/Jeremy.jpg';
 const About = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<Box m={['18% 0', '10% 0']}>
-			<Heading
-				fontSize={['4xl', '6xl']}
-				fontWeight='semibold'
-				textAlign={['left', 'left', 'center', 'center']}
-			>
-				About
-			</Heading>
+		<Box 
+		// marginTop={['25% ', '20% ','12% ', '4% ']}
+		p={['15% 0','15% 0','16% 0','7% 0']}
+		>
+			
 
-			<Flex justify='space-around' align='center' wrap='wrap'>
+			<Flex  direction={['column','column','column', 'row']} justify='center' align='center'>
 				<Box
-					maxW={['sm', 'md', 'md', 'md']}
+					maxW={['sm', 'md', '3xl', 'lg']}
+					// border='3px solid red'
+					
 					borderWidth='1px'
 					borderColor={colorMode === 'light' ? 'black' : 'white'}
 					rounded='lg'
 					overflow='hidden'
 					bg={colorMode === 'light' ? 'black' : 'white'}
 					color={colorMode === 'light' ? 'white' : 'black'}
-					m='3% 0'
+					m='3%'
 				>
 					<Flex direction='column' justify='center' align='center'>
 						<Heading fontSize={['3xl', '4xl']} fontWeight='bold' as='b'>
 							Jeremy McWilliams
 						</Heading>
 						<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
-					</Flex>
-				</Box>
-				<Box maxW={['sm', 'md', 'md', 'md']}>
-					<Flex justify='space-around' direction='column' align='center'>
-						<Box
-							borderWidth='1px'
-							rounded='lg'
-							borderColor={colorMode === 'light' ? 'black' : 'silver'}
-							overflow='hidden'
-							maxW={['sm', 'md', 'md', 'md']}
-							fontWeight='semibold'
-							letterSpacing='wide'
-							textAlign='center'
-						>
-							<Heading
-								fontSize='3xl'
-								fontWeight='bold'
-								background={colorMode === 'light' ? 'black' : 'white'}
-								color={colorMode === 'light' ? 'white' : 'black'}
-								// borderWidth='1px'
-							>
-								Software Developer
-							</Heading>
-
-							<Text
-								fontSize='lg'
-								background={colorMode === 'light' ? 'silver' : ''}
-								color={colorMode === 'light' ? 'white' : 'silver'}
-								p='2%'
-							>
-								Focused on leadership, communication, and team success with a
-								background in customer service, storytelling, and production.
-							</Text>
-							<Text
-								background={colorMode === 'light' ? 'white' : 'silver'}
-								color={colorMode === 'light' ? 'black' : 'black'}
-								fontWeight='bold'
-								fontSize='xl'
-							>
-								Work Smart! Work Hard! <br />
-								Produce Results.
-							</Text>
-						</Box>
-						<Box
-						borderWidth='1px'
-						borderColor={colorMode==='light'? 'black' : 'silver'}
-						rounded='lg'
-						m='5%'
-						textAlign='center'
-						><Box  >
-							<Heading
+						
+						<Heading
 							fontSize='3xl'
 							fontWeight='bold'
 							background={colorMode === 'light' ? 'black' : 'white'}
 							color={colorMode === 'light' ? 'white' : 'black'}
-							>Skills</Heading>
+							// borderWidth='1px'
+						>
+							Full Stack Developer
+						</Heading>
+						<Text
+							fontSize={['sm','md','xl','lg']}
+							// background={colorMode === 'light' ? 'silver' : ''}
+							color={colorMode === 'light' ? 'white' : '#545454'}
+							textAlign='center'
+							p='1%'
+						>
+							focused on leadership, communication, and team success with a
+							background in customer service, storytelling, and production
+						</Text>
+						<Text textAlign='center' fontWeight='bold' fontSize={['sm','md','xl','md']} >
+							Work smart! Work hard! Produce results.
+						</Text>
+					</Flex>
+				</Box>
+				<Box m='3%' maxW={['sm', 'md', '2xl', 'xl']}>
+					<Flex justify='space-around' direction='column'>
+						<Heading
+							fontSize='3xl'
+							fontWeight='bold'
+							// background={colorMode === 'light' ? 'black' : 'white'}
+							color={colorMode === 'light' ? 'black' : 'white'}
+						>
+							Skills
+						</Heading>
+
+						<Box p='1%'>
+							<Box m='1%'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Technical</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
+									<Text m='1%' w={['30%', '20%']}>HTML</Text>
+									<Text m='1%' w={['30%', '20%']}>JS</Text>
+									<Text m='1%' w={['30%', '20%']}>React</Text>
+									<Text m='1%' w={['30%', '20%']}>Redux</Text>
+									<Text m='1%' w={['30%', '20%']}>NodeJS</Text>
+									<Text m='1%' w={['30%', '20%']}>Express</Text>
+									<Text m='1%' w={['30%', '20%']}>KnexJS</Text>
+									<Text m='1%' w={['30%', '20%']}>Python</Text>
+									<Text m='1%' w={['30%', '20%']}>Prisma</Text>
+									<Text m='1%' w={['30%', '20%']}>GraphQl</Text>
+									<Text m='1%' w={['30%', '20%']}>Apollo</Text>
+									<Text m='1%' w={['30%', '20%']}>SQL</Text>
+									<Text m='1%' w={['30%', '20%']}>Git</Text>
+									<Text m='1%' w={['30%', '20%']}>AWS</Text>
+									<Text m='1%' w={['30%', '20%']}>Heroku</Text>
+								</Flex>
 							</Box>
-							<Box p="1%">
-							<Flex justify='center' wrap='wrap'>
-								<Text w={['30%','20%']}>React</Text>
-								<Text w={['30%','20%']}>JavaScript</Text>
-								<Text w={['30%','20%']}>Python</Text>
-								<Text w={['30%','20%']}>Redux</Text>
-								<Text w={['30%','20%']}>Prisma</Text>
-								<Text w={['30%','20%']}>GraphQl</Text>
-								<Text w={['30%','20%']}>Docker</Text>
-								<Text w={['30%','20%']}>HTML</Text>
-								<Text w={['30%','20%']}>CSS</Text>
-								<Text w={['30%','20%']}>NodeJS</Text>
-								<Text w={['30%','20%']}>Postgres</Text>
-								<Text w={['30%','20%']}>MongoDB</Text>
-								<Text w={['30%','20%']}>SQL</Text>
-								<Text w={['30%','20%']}>Express</Text>
-								<Text w={['30%','20%']}>KnexJS</Text>
-								<Text w={['30%','20%']}>Git</Text>
-								<Text w={['30%','20%']}>Prisma</Text>
-								<Text w={['30%','20%']}>Notion</Text>
-								<Text w={['30%','20%']}>Trello</Text>
-								<Text w={['30%','20%']}>Less</Text>
-								<Text w={['30%','20%']}>SCSS</Text>
-								<Text w={['30%','20%']}>Material-UI</Text>
-								<Text w={['30%','20%']}>Chakra-UI</Text>
-							</Flex>
+							<Box m='1%'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Database</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
+									<Text m='1%' w={['40%','30%']}>PostgreSQL</Text>
+									<Text m='1%' w={['40%','30%']}>MongoDB</Text>
+									<Text m='1%' w={['40%','30%']}>Sqlite3</Text>
+								</Flex>
+							</Box>
+							<Box m='1%'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Organizational</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
+									<Text m='1%' w={['30%', '20%']}>Agile</Text>
+									<Text m='1%' w={['30%', '20%']}>Notion</Text>
+									<Text m='1%' w={['30%', '20%']}>Trello</Text>
+									<Text m='1%' w={['30%', '20%']}>Github</Text>
+								</Flex>
+							</Box>
+							<Box m='1%'>
+								<Heading fontSize={['xl','xl','xl','2xl']}>Design</Heading>
+								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
+									<Text m='1%' w={['26%','20%']}>Figma</Text>
+									<Text m='1%' w={['26%','20%']}>Adobe</Text>
+									<Text m='1%' w={['26%','20%']}>CSS</Text>
+									<Text m='1%' w={['26%','20%']}>SCSS</Text>
+									<Text m='1%' w={['26%','20%']}>LESS</Text>
+									<br />
+									<Text m='1%' w={['40%','30%']}>Material-UI</Text>
+									<Text m='1%' w={['40%','30%']}>Chakra-UI</Text>
+									<Text m='1%' w={['60%','50%', '40%','30%']}>Styled-Components</Text>
+								</Flex>
 							</Box>
 						</Box>
-						<Box maxW={['sm', 'md', 'md', 'md']}>
-							<Flex justify='space-around'wrap='wrap'>
-								<Box w={['70%','']} m={['1%', '0 7%']} textAlign='center' p='3%'>
-									<Flex justify='center'>
-										<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
-											<Text fontSize='2xl'>Resume</Text>
-											<Box size={['2rem', '3rem']} as={Grade} />
-										</Link>
-									</Flex>
-								</Box>
-								<Box w={['30%','']} m={['1%', '0 7%']} textAlign='center' p='3%'>
-									<Flex justify='center'>
-										<Link href='https://app.codesignal.com/profile/jeremy_m76'>
-											<Text fontSize='2xl'>CodeSignal</Text>
-											<Box size={['2rem', '3rem']} as={Grade} />
-										</Link>
-									</Flex>
-								</Box>
-								<Box w={['30%','']} m={['1%', '0 7%']} textAlign='center' p='3%'>
-									<Flex justify='center'>
-										<Link href='https://www.codewars.com/users/j2macwilliams'>
-											<Text fontSize='2xl'>CodeWars</Text>
-											<Box size={['2rem', '3rem']} as={Grade} />
-										</Link>
-									</Flex>
-								</Box>
-							</Flex>
-						</Box>
+
+						{/* <Box maxW={['sm', 'md', 'md', 'md']}> */}
+						<Flex justify='space-around' wrap='wrap'>
+							<Box w={['70%', '']} m={['1%', '0 7%']} textAlign='center' p='3%'>
+								<Flex justify='center'>
+									<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
+										<Text fontSize='2xl'>Resume</Text>
+										<Box size={['2rem', '3rem']} as={Grade} />
+									</Link>
+								</Flex>
+							</Box>
+							<Box w={['30%', '']} m={['1%', '0 7%']} textAlign='center' p='3%'>
+								<Flex justify='center'>
+									<Link href='https://app.codesignal.com/profile/jeremy_m76'>
+										<Text fontSize='2xl'>CodeSignal</Text>
+										<Box size={['2rem', '3rem']} as={Grade} />
+									</Link>
+								</Flex>
+							</Box>
+							<Box w={['30%', '']} m={['1%', '0 7%']} textAlign='center' p='3%'>
+								<Flex justify='center'>
+									<Link href='https://www.codewars.com/users/j2macwilliams'>
+										<Text fontSize='2xl'>CodeWars</Text>
+										<Box size={['2rem', '3rem']} as={Grade} />
+									</Link>
+								</Flex>
+							</Box>
+						</Flex>
+						{/* </Box> */}
+
+						
 					</Flex>
 				</Box>
 			</Flex>

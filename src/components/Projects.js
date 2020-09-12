@@ -13,29 +13,29 @@ import gsap from 'gsap';
 const Projects = () => {
 	const { colorMode } = useColorMode();
 
-	// GSAP fns
-	const fadeIn = element => {
-		gsap.to(element, 1, {
-			opacity: 1,
-			y: -60,
-			ease: 'power4.out',
-			stagger: {
-				amount: 0.3,
-			},
-		});
-	};
+	// // GSAP fns
+	// const fadeIn = element => {
+	// 	gsap.to(element, 1, {
+	// 		opacity: 1,
+	// 		y: -60,
+	// 		ease: 'power4.out',
+	// 		stagger: {
+	// 			amount: 0.3,
+	// 		},
+	// 	});
+	// };
 
-	const fadeOut = element => {
-		gsap.to(element, 1, {
-			opacity: 0,
-			y: -70,
-			ease: 'power4.out',
-		});
-	};
+	// const fadeOut = element => {
+	// 	gsap.to(element, 1, {
+	// 		opacity: 0,
+	// 		y: -40,
+	// 		ease: 'power4.out',
+	// 	});
+	// };
 
 	return (
-		<Box zIndex='.7'>
-			<Box m={['18% 0', '9%']}>
+		<Box zIndex='.7' paddingTop={['30%','23%','','16%']}>
+			{/* <Box m={['18% 0', '9%']}>
 				<Heading
 					textAlign='center'
 					fontSize={['4xl', '6xl']}
@@ -43,13 +43,13 @@ const Projects = () => {
 				>
 					Projects
 				</Heading>
-			</Box>
-			<Flex direction='column' justify='center'>
-				<GOK colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
-				<D8 colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
-				<J2 colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
-				<Life colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
-				<GH colorMode={colorMode} fadeIn={fadeIn} fadeOut={fadeOut} />
+			</Box> */}
+			<Flex direction='column' align='center' justify='center'>
+				<GOK colorMode={colorMode} />
+				<D8 colorMode={colorMode} />
+				<J2 colorMode={colorMode} />
+				<Life colorMode={colorMode} />
+				<GH colorMode={colorMode} />
 			</Flex>
 		</Box>
 	);

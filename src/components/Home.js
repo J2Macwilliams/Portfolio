@@ -10,7 +10,7 @@ const Home = () => {
 		var t1 = gsap
 			.timeline()
 			.from('.first', {
-				duration: 2.5,
+				duration: 1.5,
 				opacity: 0,
 				ease: 'bounce.out',
 				y: -400,
@@ -18,7 +18,7 @@ const Home = () => {
 			.from(
 				'.middle',
 				{
-					duration: 2,
+					duration: 1.5,
 					opacity: 0,
 					ease: 'bounce.out',
 					y: -400,
@@ -28,7 +28,7 @@ const Home = () => {
 			.from(
 				'.last',
 				{
-					duration: 1.5,
+					duration: 1.25,
 					opacity: 0,
 					ease: 'bounce.out',
 					y: -400,
@@ -55,7 +55,7 @@ const Home = () => {
 
 	useEffect(() => {
 		var master = gsap.timeline();
-		master.add(intro()).add(position(), "+=.6");
+		master.add(intro()).add(position());
 	}, []);
 
 	return (
@@ -77,7 +77,7 @@ const Home = () => {
 
 				<Box>
 					<Text fontSize={['xl', '3xl']} className='title'>
-						Full Stack Software Developer
+						Full Stack Developer
 					</Text>
 					
 				</Box>
