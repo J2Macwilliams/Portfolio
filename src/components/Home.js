@@ -59,7 +59,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<Box m={['50% 0', '20% 0']}>
+		<Box marginTop={['40% ','30%', '20%', '10% ']}>
 			<Flex justify='center' direction='column' align='center'>
 				<Box>
 					<Flex>
