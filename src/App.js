@@ -18,7 +18,7 @@ function App() {
 			<NavBar />
 			<Box
 				flex='1 0 auto'
-				p='0 9%'
+				p={['24% 9% 10%','21% 9% 10%','15% 9% 10%','7% 9% 2%']}
 				// p={['0 9%','10% 9%']}
 				background={colorMode === 'light' ? 'white' : 'black'}
 			>
