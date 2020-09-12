@@ -60,7 +60,7 @@ const J2 = () => {
 								<Link href='https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1'>
 									<Box size={['1.6rem', '2.2rem']} as={SiNotion} />
 								</Link>
-								<Link href='https://github.com/Labs20-D8Picker'>
+								<Link href='https://github.com/VacationJourney'>
 									<Box size={['1.6rem', '2.2rem']} as={FaGithub} />
 								</Link>
 								{/* <Link href='https://labs20d8picker.netlify.app/'>
