@@ -16,5 +16,5 @@
 	text-decoration: none;
 }
 .navbar > a.activeNavButton {
-	color: red;
+	color: orange;
 }
