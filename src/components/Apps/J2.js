@@ -10,9 +10,7 @@ import dates from '../../assets/Journey2/dates.png';
 const J2 = () => {
 	return (
 		<>
-			<Box w='100%' 
-			marginBottom={['30%', '35%', '14%', '22%']}
-			>
+			<Box w='100%' marginBottom={['30%', '35%', '14%', '22%']}>
 				<Flex
 					justify='space-around'
 					align='flex-start'
@@ -41,10 +39,13 @@ const J2 = () => {
 								fontSize={['sm', 'sm', 'md', 'lg']}
 							>
 								<Text w='20%'>React</Text>
+								<Text w='20%'>NodeJS</Text>
+								<Text w='20%'>GraphQL</Text>
 								<Text w='20%'>Prisma</Text>
 								<Text w='20%'>Apollo</Text>
-								<Text w='20%'>Heroku</Text>
+								<Text w='20%'>PostgreSQL</Text>
 								<Text w='30%'>Material-UI</Text>
+								<Text w='20%'>Heroku</Text>
 							</Flex>
 							<Text
 								fontSize={['lg', '2xl']}
@@ -58,16 +59,19 @@ const J2 = () => {
 								<Text fontSize='2xl' fontWeight='bold'>
 									Full Stack Developer
 								</Text>
-
-								<Link href='https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1'>
-									<Box size={['1.6rem', '2.2rem']} as={SiNotion} />
-								</Link>
-								<Link href='https://github.com/VacationJourney'>
-									<Box size={['1.6rem', '2.2rem']} as={FaGithub} />
-								</Link>
-								{/* <Link href='https://labs20d8picker.netlify.app/'>
-									<Icon size={['1.6rem', '2.2rem']} name='external-link' />
-								</Link> */}
+								<Box w='100%'>
+									<Flex justify='space-around'>
+										<Link href='https://www.notion.so/Vacation-Planner-e81c29178ad8410eb10f298e4f6d5860'>
+											<Box size={['1.6rem', '2.2rem']} as={SiNotion} />
+										</Link>
+										<Link href='https://github.com/VacationJourney'>
+											<Box size={['1.6rem', '2.2rem']} as={FaGithub} />
+										</Link>
+										<Link href='https://journey2.netlify.app/'>
+											<Icon size={['1.6rem', '2.2rem']} name='external-link' />
+										</Link>
+									</Flex>
+								</Box>
 							</Flex>
 						</Box>
 					</Box>
