@@ -85,7 +85,7 @@ const About = () => {
 									<Text m='1%' w={['30%', '20%']}>React</Text>
 									<Text m='1%' w={['30%', '20%']}>Redux</Text>
 									<Text m='1%' w={['30%', '20%']}>NodeJS</Text>
-									<Text m='1%' w={['30%', '20%']}>Express</Text>
+									<Text m='1%' w={['30%', '20%']}>ExpressJS</Text>
 									<Text m='1%' w={['30%', '20%']}>KnexJS</Text>
 									<Text m='1%' w={['30%', '20%']}>Python</Text>
 									<Text m='1%' w={['30%', '20%']}>Prisma</Text>
@@ -117,12 +117,11 @@ const About = () => {
 							<Box m='1%'>
 								<Heading fontSize={['xl','xl','xl','2xl']}>Design</Heading>
 								<Flex fontSize={['sm','md','xl','md']} justify='center' wrap='wrap'>
-									<Text m='1%' w={['26%','20%']}>Figma</Text>
-									<Text m='1%' w={['26%','20%']}>Adobe</Text>
-									<Text m='1%' w={['26%','20%']}>CSS</Text>
-									<Text m='1%' w={['26%','20%']}>SCSS</Text>
-									<Text m='1%' w={['26%','20%']}>LESS</Text>
-									<br />
+									<Text m='1%' w={['30%','20%']}>Figma</Text>
+									<Text m='1%' w={['30%','20%']}>Adobe</Text>
+									<Text m='1%' w={['30%','20%']}>CSS</Text>
+									<Text m='1%' w={['30%','20%']}>SCSS</Text>
+									<Text m='1%' w={['30%','20%']}>LESS</Text>
 									<Text m='1%' w={['40%','30%']}>Material-UI</Text>
 									<Text m='1%' w={['40%','30%']}>Chakra-UI</Text>
 									<Text m='1%' w={['60%','50%', '40%','30%']}>Styled-Components</Text>
