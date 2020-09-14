@@ -44,9 +44,9 @@ const GOK = () => {
 							<Text w='20%'>React</Text>
 							<Text w='20%'>Redux</Text>
 							<Text w='20%'>NodeJS</Text>
-							<Text w='20%'>Express</Text>
+							<Text w='20%'>ExpressJS</Text>
 							<Text w='20%'>KnexJS</Text>
-							<Text w='20%'>Postgres</Text>
+							<Text w='20%'>PostgreSQL</Text>
 							<Text w='20%'>SQL</Text>
 							<Text w='20%'>AWS</Text>
 						</Flex>
