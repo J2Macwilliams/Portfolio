@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { NavLink } from 'react-router-dom';
-// import gsap from 'gsap';
+import gsap from 'gsap';
 import {
 	Icon,
 	useColorMode,
@@ -16,6 +16,81 @@ import DarkLogo from '../assets/Jlogodark.png';
 import '../App.css';
 const NavBar = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
+	function dark() {
+		var d1 = gsap.timeline().from('.darkMode', {
+			duration: 3,
+			opacity: 1,
+			x: -650,
+			rotate: 1080,
+			ease: 'bounce.out',
+		});
+		return d1;
+	}
+
+	function intro() {
+		var t1 = gsap
+			.timeline()
+			.from('.first', {
+				duration: 1.5,
+				opacity: 0,
+				ease: 'bounce.out',
+				y: 400,
+			})
+			.from(
+				'.middle',
+				{
+					duration: 1.5,
+					opacity: 0,
+					ease: 'bounce.out',
+					y: 400,
+				},
+				'-=1'
+			)
+			.from(
+				'.last',
+				{
+					duration: 1.25,
+					opacity: 0,
+					ease: 'bounce.out',
+					y: 400,
+				},
+				'-=1.25'
+			);
+		return t1;
+	}
+	function my_logo() {
+		var l1 = gsap.timeline().from('.logo', {
+			duration: 3,
+			ease: 'back',
+			rotation: 1260,
+			opacity: 0,
+			scale: 0,
+		});
+
+		return l1;
+	}
+
+	function position() {
+		var t2 = gsap.timeline().from('.Full', {
+			duration: 2,
+			ease: 'back',
+			opacity: 0,
+			scale: 0,
+		});
+
+		return t2;
+	}
+
+	useEffect(() => {
+
+		var master = gsap.timeline();
+		master
+			.add(dark())
+			.add(intro(), '-=2.1')
+			.add(my_logo(), '-=2.5')
+			.add(position(), '-=1');
+		
+	}, []);
 	return (
 		<Box
 			w='100%'
@@ -82,7 +157,7 @@ const NavBar = () => {
 								McWilliams
 							</Heading>
 						</Flex>
-						<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='Full'>
+						<Text fontSize={['2xl', '2xl', '3xl', '3xl']} className='Full'>
 							Full Stack Developer
 						</Text>
 					</Flex>
