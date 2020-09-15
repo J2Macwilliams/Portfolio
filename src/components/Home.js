@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Text, Heading, Box, Flex } from '@chakra-ui/core';
 
 import gsap from 'gsap';
 
 const Home = () => {
+
 	function dark() {
 		var d1 = gsap.timeline().from('.darkMode', {
 			duration: 3,
@@ -47,7 +48,7 @@ const Home = () => {
 			);
 		return t1;
 	}
-function my_logo() {
+	function my_logo() {
 		var l1 = gsap.timeline().from('.logo', {
 			duration: 3,
 			ease: 'back',
@@ -58,34 +59,53 @@ function my_logo() {
 
 		return l1;
 	}
-	
+
 	function position() {
 		var t2 = gsap.timeline().from('.Full', {
 			duration: 2,
 			ease: 'back',
 			opacity: 0,
 			scale: 0,
-		})
+		});
 
 		return t2;
 	}
 
 	useEffect(() => {
+
 		var master = gsap.timeline();
-		master.add(dark()).add(intro(), '-=2.1').add(my_logo(), '-=2.5').add(position(), '-=1');
+		master
+			.add(dark())
+			.add(intro(), '-=2.1')
+			.add(my_logo(), '-=2.5')
+			.add(position(), '-=1');
+		
 	}, []);
 
+
+	
+
 	return (
-		<Box marginTop={['40% ', '30%', '20%', '5% ']}>
-			<Flex  direction='column' align='center'>
-				<Box>
-					
-					{/* <Text fontSize={['2xl','2xl','3xl', '4xl']} className='Full'>
-						Full Stack Developer
+		<>
+			<Box marginTop={['40% ', '30%', '20%', '5% ']}>
+				<Flex direction='column' align='center'>
+					<Box>
+						{/* <Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='FrontEnd'>
+							Front End
+						</Text> */}
+						{/* <Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='back'>
+						Back End
+					</Text>
+					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='problem'>
+						Problem Solver
+					</Text>
+					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='leader'>
+						Leader
 					</Text> */}
-				</Box>
-			</Flex>
-		</Box>
+					</Box>
+				</Flex>
+			</Box>{' '}
+		</>
 	);
 };
 
