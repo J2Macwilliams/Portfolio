@@ -12,7 +12,7 @@ const GOK = () => {
 	return (
 		<Box
 			w='100%'
-			// marginTop={['10%', '7%', '2%', '1%']}
+			marginTop={[0,0, 0, '-14%']}
 			marginBottom={['30%', '35%', '14%', '20%']}
 		>
 			<Flex
