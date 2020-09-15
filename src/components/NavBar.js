@@ -53,19 +53,22 @@ const NavBar = () => {
 				p='.5%'
 				textAlign='right'
 				w='100%'
-				// color={colorMode === 'light' ? '#363636' : '#f2f2f2'}
+			
 			>
 				<Flex justify='space-between'>
+					<Box m={['2% 1% 0', '', '']}>
 					<Link
-						// m={['1.5% 1% 0', '', '']}
+						
 						href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
 					>
 						<Image
+						
 							className='logo'
 							size={['2rem', '3rem']}
 							src={colorMode === 'light' ? Logo : DarkLogo}
 						/>
 					</Link>
+					</Box>
 					<Flex direction='column' align='center'>
 						<Flex>
 							<Heading m='1%' fontSize={['3xl', '4xl', '5xl', '5xl']} className='first'>
