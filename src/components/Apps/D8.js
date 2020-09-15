@@ -24,25 +24,13 @@ const D8 = () => {
 					>
 						<Box textAlign='center' lineHeight='2'>
 							<Heading>D8Picker</Heading>
-							<Flex
-								wrap='wrap'
-								justify='space-around'
-								lineHeight='1.4'
-								bg='silver'
+							<Text 
+							bg='silver'
 								color='black'
 								rounded='md'
 								fontSize={['sm', 'sm', 'md', 'lg']}
-							>
-								<Text w='20%'>React</Text>
-								<Text w='20%'>Context</Text>
-								<Text w='20%'>NodeJS</Text>
-								<Text w='20%'>ExpressJS</Text>
-								<Text w='20%'>KnexJS</Text>
-								<Text w='20%'>MongoDB</Text>
-								<Text w='20%'>SQL</Text>
-								<Text w='20%'>GoogleAPI</Text>
-								<Text w='20%'>Heroku</Text>
-							</Flex>
+								>React 	&ensp; ContextAPI &ensp; NodeJS &ensp; ExpressJS &ensp; KnexJS &ensp; GoogleAPI &ensp; Heroku </Text>
+							
 							<Text
 								fontSize={['lg', '2xl']}
 								lineHeight='1.6'
@@ -53,7 +41,7 @@ const D8 = () => {
 
 							<Flex wrap='wrap' justify='space-around' align='center'>
 								<Flex direction='column'>
-									<Text fontSize='2xl' fontWeight='bold'>
+									<Text fontSize={['lg', 'lg', '2xl', '3xl']} fontWeight='bold'>
 										Full Stack Developer
 									</Text>
 									

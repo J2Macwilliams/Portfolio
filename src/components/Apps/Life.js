@@ -25,21 +25,15 @@ const Life = () => {
 					<Box w={['100%', '100%', '100%', '45%']} boxSizing='border-box'>
 						<Box textAlign='center' lineHeight='2'>
 							<Heading>Conway's Game of Life</Heading>
-							<Flex
-								wrap='wrap'
-								justify='space-around'
-								lineHeight='1.4'
-								bg='silver'
+							<Text bg='silver'
 								color='black'
 								rounded='md'
 								fontSize={['sm', 'sm', 'md', 'lg']}
-							>
-								<Text w='20%'>React</Text>
-								<Text w='20%'>Material-UI</Text>
-							</Flex>
+								>React &ensp; Material-UI</Text>
+							
 
 							<Flex wrap='wrap' justify='space-around' align='center'>
-								<Text fontSize='2xl' fontWeight='bold'>
+								<Text fontSize={['lg', 'lg', '2xl', '3xl']} fontWeight='bold'>
 									Front End Developer
 								</Text>
 
