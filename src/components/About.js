@@ -8,20 +8,15 @@ import {
 	Image,
 	Link,
 } from '@chakra-ui/core';
-// import CodeWars from '../assets/CodeWars.png'
-import { Grade } from '@material-ui/icons';
 
-// import { BsFillXDiamondFill } from 'react-icons/gi';
+import { Grade } from '@material-ui/icons';
 
 import Jeremy from '../assets/Jeremy.jpg';
 
 const About = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<Box
-		// marginTop={['25% ', '20% ','12% ', '4% ']}
-		// p={['15% 0','15% 0','16% 0','7% 0']}
-		>
+		<Box>
 			<Flex
 				direction={['column', 'column', 'column', 'row']}
 				justify='center'
@@ -29,8 +24,6 @@ const About = () => {
 			>
 				<Box
 					maxW={['sm', 'md', '3xl', 'lg']}
-					// border='3px solid red'
-
 					borderWidth='1px'
 					borderColor={colorMode === 'light' ? 'black' : 'white'}
 					rounded='lg'
@@ -40,39 +33,24 @@ const About = () => {
 					m='3.5%'
 				>
 					<Flex direction='column' justify='center' align='center'>
-						{/* <Heading fontSize={['3xl', '4xl']} fontWeight='bold' as='b'>
-							Jeremy McWilliams
-						</Heading> */}
 						<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
-
-						{/* <Heading
-							fontSize='3xl'
-							fontWeight='bold'
-							background={colorMode === 'light' ? 'black' : 'white'}
-							color={colorMode === 'light' ? 'white' : 'black'}
-							// borderWidth='1px'
-						>
-							Full Stack Developer
-						</Heading> */}
 					</Flex>
 				</Box>
 				<Box m='3.5%' maxW={['sm', 'md', '2xl', 'xl']}>
 					<Flex justify='space-around' direction='column'>
 						<Text
-							fontSize={['sm', 'md', 'xl', 'lg']}
-							// background={colorMode === 'light' ? 'silver' : ''}
+							fontSize={['sm', 'md', 'xl', 'xl']}
+							fontWeight='bold'
 							color={colorMode === 'light' ? 'black' : 'white'}
 							textAlign='center'
 							p='1%'
 						>
-						Along the way, I've discovered the passion for developing and producing creative projects. Gaining skills through customer-service, storytelling, and production, I'm focused on leadership, communication, and team building.  
+							Jack of trades turned Full Stack Developer.
+							<br />I enjoy React, GraphQL, and NodeJS, while ever curious to
+							learn. I'm a problem solver, developer, and teammate. Passionate
+							to create, motivated to deliver!
 						</Text>
-						<Heading
-							fontSize='3xl'
-							fontWeight='bold'
-							// background={colorMode === 'light' ? 'black' : 'white'}
-							// color={colorMode === 'light' ? 'black' : 'white'}
-						>
+						<Heading fontSize='3xl' fontWeight='bold'>
 							Skills
 						</Heading>
 
