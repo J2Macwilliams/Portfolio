@@ -18,9 +18,9 @@ function App() {
 			<NavBar />
 			<Box
 				flex='1 0 auto'
-				p={['24% 9% 10%','21% 9% 10%','15% 9% 10%','7% 9% 2%']}
+				p={['34% 9% 10%','40% 9% 10%','28% 9% 10%','15% 9% 1%']}
 				// p={['0 9%','10% 9%']}
-				background={colorMode === 'light' ? 'white' : 'black'}
+				background={colorMode === 'light' ? '#f2f2f2' : '#363636'}
 			>
 				<Switch>
 					<Route path='/projects'>
