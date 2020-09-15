@@ -5,106 +5,102 @@ import { Text, Heading, Box, Flex } from '@chakra-ui/core';
 import gsap from 'gsap';
 
 const Home = () => {
+	// const [trigger, setTrigger] = useState(true);
+	// function FE() {
+	// 	var t2 = gsap
+	// 		.timeline()
+	// 		.from('.front', {
+	// 			duration: 2,
+	// 			ease: 'back',
+	// 			opacity: 0,
+	// 			scale: 0,
+	// 		})
+	// 		.reverse();
 
-	function dark() {
-		var d1 = gsap.timeline().from('.darkMode', {
-			duration: 3,
-			opacity: 1,
-			x: -650,
-			rotate: 1080,
-			ease: 'bounce.out',
-		});
-		return d1;
-	}
+	// 	return t2;
+	// }
+	// function BE() {
+	// 	var t2 = gsap
+	// 		.timeline()
+	// 		.from('.back', {
+	// 			duration: 2,
+	// 			ease: 'back',
+	// 			opacity: 0,
+	// 			scale: 0,
+	// 		})
+	// 		.reverse();
 
-	function intro() {
-		var t1 = gsap
-			.timeline()
-			.from('.first', {
-				duration: 1.5,
-				opacity: 0,
-				ease: 'bounce.out',
-				y: 400,
-			})
-			.from(
-				'.middle',
-				{
-					duration: 1.5,
-					opacity: 0,
-					ease: 'bounce.out',
-					y: 400,
-				},
-				'-=1'
-			)
-			.from(
-				'.last',
-				{
-					duration: 1.25,
-					opacity: 0,
-					ease: 'bounce.out',
-					y: 400,
-				},
-				'-=1.25'
-			);
-		return t1;
-	}
-	function my_logo() {
-		var l1 = gsap.timeline().from('.logo', {
-			duration: 3,
-			ease: 'back',
-			rotation: 1260,
-			opacity: 0,
-			scale: 0,
-		});
+	// 	return t2;
+	// }
+	// function solver() {
+	// 	var t2 = gsap
+	// 		.timeline()
+	// 		.from('.problem', {
+	// 			duration: 2,
+	// 			ease: 'back',
+	// 			opacity: 0,
+	// 			scale: 0,
+	// 		})
+	// 		.reverse();
 
-		return l1;
-	}
+	// 	return t2;
+	// }
+	// function leader() {
+	// 	var t2 = gsap
+	// 		.timeline()
+	// 		.from('.lead', {
+	// 			duration: 2,
+	// 			ease: 'back',
+	// 			opacity: 0,
+	// 			scale: 0,
+	// 		})
+	// 		.reverse();
 
-	function position() {
-		var t2 = gsap.timeline().from('.Full', {
-			duration: 2,
-			ease: 'back',
-			opacity: 0,
-			scale: 0,
-		});
+	// 	return t2;
+	// }
 
-		return t2;
-	}
-
-	useEffect(() => {
-
-		var master = gsap.timeline();
-		master
-			.add(dark())
-			.add(intro(), '-=2.1')
-			.add(my_logo(), '-=2.5')
-			.add(position(), '-=1');
-		
-	}, []);
-
-
-	
+	// useEffect(() => {
+	// 	console.log(trigger)
+	// 	if (trigger) {
+	// 		var master = gsap.timeline();
+	// 		master.add(FE(), '+=3.3').add(BE()).add(solver()).add(leader());
+	// 		setTrigger(!trigger);
+			
+	// 	}
+	// 	console.log(trigger)
+	// }, []);
 
 	return (
 		<>
 			<Box marginTop={['40% ', '30%', '20%', '5% ']}>
-				<Flex direction='column' align='center'>
-					<Box>
-						{/* <Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='FrontEnd'>
-							Front End
-						</Text> */}
-						{/* <Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='back'>
+				<Flex direction='column' justify='center' align='center'>
+					{/* <Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='front'>
+						Front End
+					</Text>
+					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='back'>
 						Back End
 					</Text>
 					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='problem'>
 						Problem Solver
 					</Text>
-					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='leader'>
+					<Text fontSize={['2xl', '2xl', '3xl', '4xl']} className='lead'>
 						Leader
 					</Text> */}
-					</Box>
+					{/* <Text
+						className='blurb'
+							fontSize={['sm', 'md', 'xl', '2xl']}
+							fontWeight='bold'
+							// color={colorMode === 'light' ? 'black' : 'white'}
+							textAlign='center'
+							p='1%'
+						>
+							Jack of trades turned Full Stack Developer.
+							<br />Ever curious to
+							learn, I'm a problem solver, developer, and teammate.<br/> Passionate
+							to create, motivated to deliver!
+						</Text> */}
 				</Flex>
-			</Box>{' '}
+			</Box>
 		</>
 	);
 };
