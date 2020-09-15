@@ -32,30 +32,18 @@ const GOK = () => {
 				<Box w={['100%', '100%', '100%', '45%']} boxSizing='border-box'>
 					<Box textAlign='center' lineHeight='2'>
 						<Heading>Garden Of Knowledge</Heading>
-						<Flex
-							wrap='wrap'
-							justify='space-around'
-							lineHeight='1.4'
-							bg='silver'
-							color='black'
-							rounded='md'
-							fontSize={['sm', 'sm', 'md', 'lg']}
-						>
-							<Text w='20%'>React</Text>
-							<Text w='20%'>Redux</Text>
-							<Text w='20%'>NodeJS</Text>
-							<Text w='20%'>ExpressJS</Text>
-							<Text w='20%'>KnexJS</Text>
-							<Text w='20%'>PostgreSQL</Text>
-							<Text w='20%'>SQL</Text>
-							<Text w='20%'>AWS</Text>
-						</Flex>
+						<Text bg='silver'
+								color='black'
+								rounded='md'
+								fontSize={['sm', 'sm', 'md', 'lg']}
+								>React &ensp; Redux &ensp; NodeJS &ensp; ExpressJS &ensp; KnexJS &ensp; PostgreSQL &ensp; SCSS &ensp; AWS </Text>
+					
 						<Text fontSize={['lg', '2xl']} lineHeight='1.6' fontStyle='italic'>
 							Learning Management System
 						</Text>
 
 						<Flex wrap='wrap' justify='space-around' align='center'>
-							<Text fontSize='2xl' fontWeight='bold'>
+							<Text fontSize={['lg', 'lg', '2xl', '3xl']} fontWeight='bold'>
 								Team Lead / Full Stack Developer
 							</Text>
 

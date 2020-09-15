@@ -29,24 +29,12 @@ const J2 = () => {
 					<Box w={['100%', '100%', '100%', '45%']} boxSizing='border-box'>
 						<Box textAlign='center' lineHeight='2'>
 							<Heading>Journey 2</Heading>
-							<Flex
-								wrap='wrap'
-								justify='space-around'
-								lineHeight='1.4'
-								bg='silver'
+							<Text bg='silver'
 								color='black'
 								rounded='md'
 								fontSize={['sm', 'sm', 'md', 'lg']}
-							>
-								<Text w='20%'>React</Text>
-								<Text w='20%'>NodeJS</Text>
-								<Text w='20%'>GraphQL</Text>
-								<Text w='20%'>Prisma</Text>
-								<Text w='20%'>Apollo</Text>
-								<Text w='20%'>PostgreSQL</Text>
-								<Text w='30%'>Material-UI</Text>
-								<Text w='20%'>Heroku</Text>
-							</Flex>
+								>React &ensp; NodeJS &ensp; GraphQL &ensp; Prisma &ensp; Apollo &ensp; PostgreSQL &ensp; Material-UI &ensp; Heroku</Text>
+							
 							<Text
 								fontSize={['lg', '2xl']}
 								lineHeight='1.6'
@@ -56,7 +44,8 @@ const J2 = () => {
 							</Text>
 
 							<Flex wrap='wrap' justify='space-around' align='center'>
-								<Text fontSize='2xl' fontWeight='bold'>
+								<Text 
+								fontSize={['lg', 'lg', '2xl', '3xl']} fontWeight='bold'>
 									Full Stack Developer
 								</Text>
 								<Box w='100%'>

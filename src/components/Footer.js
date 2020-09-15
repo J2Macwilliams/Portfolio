@@ -49,15 +49,15 @@ const Footer = () => {
 
 	return (
 		<Box
-			bg={colorMode === 'light' ? 'black' : 'white'}
+			bg={colorMode === 'light' ?  '#363636': '#f2f2f2' }
 			w='100%'
 			p='1%'
 			position='fixed'
 			// zIndex='1'
 			left='0px'
 			bottom='0px'
-			// m='.5%'
-			color={colorMode === 'light' ? 'white' : 'black'}
+			
+			color={colorMode === 'light' ?   '#f2f2f2' : '#363636'}
 		>
 			{/* <Box > */}
 			<Flex justify='space-around'>
