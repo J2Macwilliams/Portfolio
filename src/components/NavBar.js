@@ -131,7 +131,7 @@ const NavBar = () => {
 			
 			>
 				<Flex justify='space-between'>
-					<Box m={['2% 1% 0', '', '']}>
+					<Box m={['2% 1% 0', '0%', '1%', '0%']}>
 					<Link
 						
 						href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
