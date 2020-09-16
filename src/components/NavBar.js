@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import gsap from 'gsap';
 import {
@@ -9,7 +9,7 @@ import {
 	Flex,
 	Image,
 	Link,
-	Text
+	Text,
 } from '@chakra-ui/core';
 import Logo from '../assets/Jlogo.png';
 import DarkLogo from '../assets/Jlogodark.png';
@@ -82,14 +82,12 @@ const NavBar = () => {
 	}
 
 	useEffect(() => {
-
 		var master = gsap.timeline();
 		master
 			.add(dark())
 			.add(intro(), '-=2.1')
 			.add(my_logo(), '-=2.5')
 			.add(position(), '-=1');
-		
 	}, []);
 	return (
 		<Box
@@ -124,42 +122,45 @@ const NavBar = () => {
 					About
 				</NavLink>
 			</Box>
-			<Box
-				p='.5%'
-				textAlign='right'
-				w='100%'
-			
-			>
+			<Box p='.5%' textAlign='right' w='100%'>
 				<Flex justify='space-between'>
 					<Box m={['2% 1% 0', '0%', '1%', '0%']}>
-					<Link
-						
-						href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
-					>
-						<Image
-						
-							className='logo'
-							size={['2rem', '3rem']}
-							src={colorMode === 'light' ? Logo : DarkLogo}
-						/>
-					</Link>
+						<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
+							<Image
+								className='logo'
+								size={['2rem', '3rem']}
+								src={colorMode === 'light' ? Logo : DarkLogo}
+							/>
+						</Link>
 					</Box>
 					<Flex direction='column' align='center'>
 						<Flex>
-							<Heading m='1%' fontSize={['3xl', '4xl', '5xl', '5xl']} className='first'>
+							<Heading
+								m='1%'
+								fontSize={['2xl', '4xl', '5xl', '5xl']}
+								className='first'
+							>
 								Jeremy
 							</Heading>
-							<Heading m='1%' fontSize={['3xl', '4xl', '5xl', '5xl']} className='middle'>
+							<Heading
+								m='1%'
+								fontSize={['2xl', '4xl', '5xl', '5xl']}
+								className='middle'
+							>
 								J.
 							</Heading>
 
-							<Heading m='1%' fontSize={['3xl', '4xl', '5xl', '5xl']} className='last'>
+							<Heading
+								m='1%'
+								fontSize={['2xl', '4xl', '5xl', '5xl']}
+								className='last'
+							>
 								McWilliams
 							</Heading>
 						</Flex>
-						<Text fontSize={['2xl', '2xl', '3xl', '3xl']} className='Full'>
+						{/* <Text fontSize={['2xl', '2xl', '3xl', '3xl']} className='Full'>
 							Full Stack Developer
-						</Text>
+						</Text> */}
 					</Flex>
 					<Icon
 						className='darkMode'

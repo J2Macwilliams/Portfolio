@@ -17,82 +17,79 @@ const About = () => {
 	const { colorMode } = useColorMode();
 	return (
 		<Flex
-			direction={['column', 'column', 'column', 'row']}
+			direction='column'
+			// direction={['column', 'column', 'column', 'row']}
 			justify='center'
 			align='center'
+			marginBottom='1%'
 		>
-			<Box
-				maxW={['sm', 'md', 'xl', '2xl']}
-				borderWidth='1px'
-				borderColor={colorMode === 'light' ? 'black' : 'white'}
-				rounded='lg'
-				overflow='hidden'
-				bg={colorMode === 'light' ? 'black' : 'white'}
-				color={colorMode === 'light' ? 'white' : 'black'}
-				m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
-			>
-				<Flex direction='column' align='center'>
+			<Flex p='1%' direction={['column', 'column', 'column', 'row']}>
+				<Box
+					maxW={['sm', 'md', 'xl', 'md']}
+					borderWidth='2px'
+					borderColor={colorMode === 'light' ? 'black' : 'white'}
+					rounded='lg'
+					overflow='hidden'
+					m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
+				>
 					<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
-				</Flex>
-			</Box>
-			<Box
-				m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
-				p='1%'
-				maxW={['sm', 'md', '2xl', '3xl']}
-			>
-				<Flex justify='space-around' direction='column'>
+				</Box>
+				<Flex align='center' direction='column'>
 					<Text
-						fontSize={['sm', 'md', 'xl', 'xl']}
+						maxW={['sm', 'md', 'xl', 'xl']}
+						fontSize={['sm', 'md', 'xl', '2xl']}
 						fontWeight='bold'
 						color={colorMode === 'light' ? 'black' : 'white'}
 						textAlign='center'
 						p='1%'
 					>
-						{/* Jack of all trades turned Full Stack Developer. */}
-						{/* <br /> */}
-						Jack of all trades turned Full Stack Developer,
 						<br />
-						I'm motivated to deliver as teammate and leader.
+						Recent graduate of Lambda School, where I got my start in
+						technology. And a background in customer-service, storytelling, and
+						production, I've developed skills to produce creative scalable
+						impactful applications. I'm passionate to create, motivated to
+						deliver and curious to learn.
 					</Text>
-
-					<Heading fontSize='3xl' fontWeight='bold'>
-						Skills
-					</Heading>
-
-					<Box p='1%'>
-						<Box m='1%'>
-							<Heading fontSize={['xl', 'xl', 'xl', 'xl']}>Technical</Heading>
-							<Text fontSize={['md', 'lg', 'lg', 'xl']}>
-								HTML5 | CSS | JavaScript | React | Redux | NodeJS | ExpressJS |
-								KnexJS | Python | Prisma | Apollo | SQL | Git | AWS | Heroku{' '}
-							</Text>
-							<Heading fontSize={['xl', 'xl', 'xl', '2xl']}>DataBase</Heading>
-							<Text fontSize={['md', 'lg', 'lg', 'xl']}>
-								PostgreSQL | SQLite3 | MongoDB{' '}
-							</Text>
-							<Heading fontSize={['xl', 'xl', 'xl', '2xl']}>
-								Organizational
-							</Heading>
-							<Text fontSize={['md', 'lg', 'lg', 'xl']}>
-								Agile | Notion | Trello | GitHub
-							</Text>
-							<Heading fontSize={['xl', 'xl', 'xl', '2xl']}>Design</Heading>
-							<Text fontSize={['md', 'lg', 'lg', 'xl']}>
-								Figma | Adobe | SCSS | LessJS | Material-UI | Chakra-UI |
-								Styled-Components
-							</Text>
-						</Box>
-					</Box>
-					<Flex justify='space-around'>
-						<Box m={['1%', '0 7%']} textAlign='center' p='3%'>
+					<Box m={['1%', '0 7%']} textAlign='center' p='3%'>
 							<Flex justify='center'>
 								<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
 									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>Resume</Text>
 									<Box size={['2rem', '3rem']} as={Grade} />
 								</Link>
 							</Flex>
+						</Box> 
+				</Flex>
+			</Flex>
+			<Box
+				// m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
+				p='1%'
+				maxW={['sm', 'md', '2xl', '6xl']}
+			>
+				<Heading fontSize={['2xl', '3xl', '3xl', '5xl']} fontWeight='bold'>
+					Skills
+				</Heading>
+				<Flex justify='space-around'>
+					<Box p='1%'>
+						<Box m='1%'>
+							<Text fontSize={['md', 'lg', 'lg', '2xl']}>
+								HTML5 | CSS | JavaScript | React | Redux | NodeJS | ExpressJS |
+								KnexJS | Python | Prisma | Apollo | SQL | Git | AWS | Heroku |
+								PostgreSQL | SQLite3 | MongoDB Agile | Notion | Trello | GitHub
+								| Figma | Adobe | SCSS | LessJS | Material-UI | Chakra-UI |
+								Styled-Components
+							</Text>
 						</Box>
-						<Box m={['1%', '0 7%']} textAlign='center' p='3%'>
+					</Box>
+
+					{/* <Box m={['1%', '0 7%']} textAlign='center' p='3%'>
+							<Flex justify='center'>
+								<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
+									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>Resume</Text>
+									<Box size={['2rem', '3rem']} as={Grade} />
+								</Link>
+							</Flex>
+						</Box> */}
+					{/* <Box m={['1%', '0 7%']} textAlign='center' p='3%'>
 							<Flex justify='center'>
 								<Link href='https://app.codesignal.com/profile/jeremy_m76'>
 									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>CodeSignal</Text>
@@ -107,9 +104,7 @@ const About = () => {
 									<Box size={['2rem', '3rem']} as={Grade} />
 								</Link>
 							</Flex>
-						</Box>
-					</Flex>
-					{/* </Box> */}
+						</Box> */}
 				</Flex>
 			</Box>
 		</Flex>
