@@ -74,7 +74,7 @@ const About = () => {
 							<Text fontSize={['md', 'lg', 'lg', '2xl']}>
 								HTML5 | CSS | JavaScript | React | Redux | NodeJS | ExpressJS |
 								KnexJS | Python | Prisma | Apollo | SQL | Git | AWS | Heroku |
-								PostgreSQL | SQLite3 | MongoDB Agile | Notion | Trello | GitHub
+								PostgreSQL | SQLite3 | MongoDB | Jest | React-Testing-Library | Agile | Notion | Trello | GitHub
 								| Figma | Adobe | SCSS | LessJS | Material-UI | Chakra-UI |
 								Styled-Components
 							</Text>
