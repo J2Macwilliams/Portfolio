@@ -23,19 +23,19 @@ const About = () => {
 			align='center'
 			marginBottom='1%'
 		>
-			<Flex p='1%' direction={['column', 'column', 'column', 'row']}>
+			<Flex p='1%' direction={ ['column', 'column', 'column', 'row'] }>
 				<Box
-					maxW={['sm', 'md', 'xl', 'md']}
+					maxW={ ['sm', 'md', 'xl', 'md'] }
 					borderWidth='2px'
-					borderColor={colorMode === 'light' ? 'black' : 'white'}
+					borderColor={ colorMode === 'light' ? 'black' : 'white' }
 					rounded='lg'
 					overflow='hidden'
-					m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
+					m={ ['2%', '', '0 1.2% 0', '0 1.2% 0'] }
 				>
-					<Image objectFit='cover' src={Jeremy} alt='Jeremy McWilliams' />
+					<Image objectFit='cover' src={ Jeremy } alt='Jeremy McWilliams' />
 				</Box>
 				<Flex align='center' direction='column'>
-					<Text
+					{/* <Text
 						maxW={['sm', 'md', 'xl', 'xl']}
 						fontSize={['sm', 'md', 'xl', '2xl']}
 						fontWeight='bold'
@@ -49,64 +49,40 @@ const About = () => {
 						production, I've developed skills to produce creative scalable
 						impactful applications. I'm passionate to create, motivated to
 						deliver and curious to learn.
-					</Text>
-					<Box m={['1%', '0 7%']} textAlign='center' p='3%'>
-							<Flex justify='center'>
-								<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
-									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>Resume</Text>
-									<Box size={['2rem', '3rem']} as={Grade} />
-								</Link>
-							</Flex>
-						</Box> 
+					</Text> */}
+					<Box
+						// m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
+						p='1%'
+						maxW={ ['sm', 'md', '2xl', '6xl'] }
+					>
+						<Heading fontSize={ ['2xl', '3xl', '3xl', '5xl'] } fontWeight='bold'>
+							Skills
+				</Heading>
+						<Flex justify='space-around'>
+							<Box p='1%'>
+								<Box m='1%'>
+									<Text fontSize={ ['md', 'lg', 'lg', '2xl'] }>
+										HTML5 &ensp; CSS &ensp; JavaScript &ensp; React &ensp; Redux &ensp; Node.js  &ensp;Express.js &ensp;
+										Knex.js &ensp; Python &ensp; Prisma &ensp; Apollo &ensp; Docker-Compose &ensp; SQL &ensp; Git &ensp; AWS &ensp; Heroku &ensp;
+										PostgreSQL &ensp; SQLite3 &ensp; MongoDB &ensp; Jest  &ensp; React-Testing-Library &ensp; Agile &ensp; Notion &ensp; Trello &ensp; GitHub &ensp; 
+										 Figma &ensp; Adobe Photoshop &ensp; SCSS &ensp; LESS &ensp; Material-UI  &ensp; Chakra-UI &ensp;
+										Styled-Components
+							</Text>
+								</Box>
+							</Box>
+						</Flex>
+					</Box>
+					<Box m={ ['1%', '0 7%'] } textAlign='center' p='3%'>
+						<Flex justify='center'>
+							<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
+								<Text fontSize={ ['xl', 'xl', '2xl', '2xl'] }>Resume</Text>
+								<Box size={ ['2rem', '3rem'] } as={ Grade } />
+							</Link>
+						</Flex>
+					</Box>
 				</Flex>
 			</Flex>
-			<Box
-				// m={['2%', '', '0 1.2% 0', '0 1.2% 0']}
-				p='1%'
-				maxW={['sm', 'md', '2xl', '6xl']}
-			>
-				<Heading fontSize={['2xl', '3xl', '3xl', '5xl']} fontWeight='bold'>
-					Skills
-				</Heading>
-				<Flex justify='space-around'>
-					<Box p='1%'>
-						<Box m='1%'>
-							<Text fontSize={['md', 'lg', 'lg', '2xl']}>
-								HTML5 | CSS | JavaScript | React | Redux | NodeJS | ExpressJS |
-								KnexJS | Python | Prisma | Apollo | SQL | Git | AWS | Heroku |
-								PostgreSQL | SQLite3 | MongoDB | Jest | React-Testing-Library | Agile | Notion | Trello | GitHub
-								| Figma | Adobe | SCSS | LessJS | Material-UI | Chakra-UI |
-								Styled-Components
-							</Text>
-						</Box>
-					</Box>
 
-					{/* <Box m={['1%', '0 7%']} textAlign='center' p='3%'>
-							<Flex justify='center'>
-								<Link href='https://www.canva.com/design/DAEHOOyvAWU/s_rFsgXikAk4CtObduCrGA/view?utm_content=DAEHOOyvAWU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>
-									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>Resume</Text>
-									<Box size={['2rem', '3rem']} as={Grade} />
-								</Link>
-							</Flex>
-						</Box> */}
-					{/* <Box m={['1%', '0 7%']} textAlign='center' p='3%'>
-							<Flex justify='center'>
-								<Link href='https://app.codesignal.com/profile/jeremy_m76'>
-									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>CodeSignal</Text>
-									<Box size={['2rem', '3rem']} as={Grade} />
-								</Link>
-							</Flex>
-						</Box>
-						<Box m={['1%', '0 7%']} textAlign='center' p='3%'>
-							<Flex justify='center'>
-								<Link href='https://www.codewars.com/users/j2macwilliams'>
-									<Text fontSize={['xl', 'xl', '2xl', '2xl']}>CodeWars</Text>
-									<Box size={['2rem', '3rem']} as={Grade} />
-								</Link>
-							</Flex>
-						</Box> */}
-				</Flex>
-			</Box>
 		</Flex>
 	);
 };
