@@ -18,3 +18,16 @@
 .navbar > a.activeNavButton {
 	color: orange;
 }
+
+.navLink2{
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: 2%;
+	white-space: nowrap;
+}
+.pflex > a.activeNavButton {
+	background: orange;
+	padding: 2%;
+	border-radius: 8px;
+	
+}
