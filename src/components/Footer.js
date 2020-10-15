@@ -61,13 +61,13 @@ const Footer = () => {
 		>
 			{/* <Box > */}
 			<Flex justify='space-around'>
-				<Link href='https://github.com/J2Macwilliams'>
+				<Link href='https://github.com/J2Macwilliams'target='_blank'>
 					<Box size={['1.6rem', '2.2rem']} as={FaGithub} />
 				</Link>
-				<Link href='https://www.linkedin.com/in/jeremyjmcwilliams/'>
+				<Link href='https://www.linkedin.com/in/jeremyjmcwilliams/' target='_blank'>
 					<Box size={['1.6rem', '2.2rem']} as={FaLinkedinIn} />
 				</Link>
-				<Link href='https://twitter.com/McWilliamJJ1'>
+				<Link href='https://twitter.com/McWilliamJJ1' target='_blank'>
 					<Box size={['1.6rem', '2.2rem']} as={FaTwitter} />
 				</Link>
 				<Box onClick={onOpen} size={['1.6rem', '2.2rem']} as={GrMail} />
