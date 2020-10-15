@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import gsap from 'gsap';
 import {
 	Icon,
 	useColorMode,
 	Box,
-	Heading,
 	Flex,
 	Image,
-	Link,
-	Text,
+	Link
 } from '@chakra-ui/core';
 import Logo from '../assets/Jlogo.png';
 import DarkLogo from '../assets/Jlogodark.png';
 import '../App.css';
 const NavBar = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
+	const { pathname } = useLocation();
 	function dark() {
 		var d1 = gsap.timeline().from('.darkMode', {
 			duration: 3,
@@ -27,37 +26,6 @@ const NavBar = () => {
 		return d1;
 	}
 
-	function intro() {
-		var t1 = gsap
-			.timeline()
-			.from('.first', {
-				duration: 1.5,
-				opacity: 0,
-				ease: 'bounce.out',
-				y: 400,
-			})
-			.from(
-				'.middle',
-				{
-					duration: 1.5,
-					opacity: 0,
-					ease: 'bounce.out',
-					y: 400,
-				},
-				'-=1'
-			)
-			.from(
-				'.last',
-				{
-					duration: 1.25,
-					opacity: 0,
-					ease: 'bounce.out',
-					y: 400,
-				},
-				'-=1.25'
-			);
-		return t1;
-	}
 	function my_logo() {
 		var l1 = gsap.timeline().from('.logo', {
 			duration: 3,
@@ -70,24 +38,13 @@ const NavBar = () => {
 		return l1;
 	}
 
-	function position() {
-		var t2 = gsap.timeline().from('.Full', {
-			duration: 2,
-			ease: 'back',
-			opacity: 0,
-			scale: 0,
-		});
-
-		return t2;
-	}
-
 	useEffect(() => {
 		var master = gsap.timeline();
 		master
 			.add(dark())
-			.add(intro(), '-=2.1')
-			.add(my_logo(), '-=2.5')
-			.add(position(), '-=1');
+			
+			.add(my_logo(), '-=2.5');
+			
 	}, []);
 	return (
 		<Box
@@ -108,8 +65,8 @@ const NavBar = () => {
 				<NavLink
 					className='navLink'
 					activeClassName='activeNavButton'
-					exact
-					to='/projects'
+					isActive={() => ['/projects', '/projects/frontEnd'].includes(pathname)}
+					to="projects"
 				>
 					Projects
 				</NavLink>
@@ -119,7 +76,7 @@ const NavBar = () => {
 					exact
 					to='/about'
 				>
-					About
+					Skills
 				</NavLink>
 			</Box>
 			<Box p='.5%' textAlign='right' w='100%'>
@@ -134,7 +91,7 @@ const NavBar = () => {
 						</Link>
 					</Box>
 					<Flex direction='column' align='center'>
-						<Flex>
+						{/* <Flex>
 							<Heading
 								m='1%'
 								fontSize={['2xl', '4xl', '5xl', '5xl']}
@@ -157,7 +114,7 @@ const NavBar = () => {
 							>
 								McWilliams
 							</Heading>
-						</Flex>
+						</Flex> */}
 						{/* <Text fontSize={['2xl', '2xl', '3xl', '3xl']} className='Full'>
 							Full Stack Developer
 						</Text> */}
