@@ -76,7 +76,7 @@ const NavBar = () => {
 					exact
 					to='/about'
 				>
-					Skills
+					About
 				</NavLink>
 			</Box>
 			<Box p='.5%' textAlign='right' w='100%'>
@@ -90,35 +90,7 @@ const NavBar = () => {
 							/>
 						</Link>
 					</Box>
-					<Flex direction='column' align='center'>
-						{/* <Flex>
-							<Heading
-								m='1%'
-								fontSize={['2xl', '4xl', '5xl', '5xl']}
-								className='first'
-							>
-								Jeremy
-							</Heading>
-							<Heading
-								m='1%'
-								fontSize={['2xl', '4xl', '5xl', '5xl']}
-								className='middle'
-							>
-								J.
-							</Heading>
-
-							<Heading
-								m='1%'
-								fontSize={['2xl', '4xl', '5xl', '5xl']}
-								className='last'
-							>
-								McWilliams
-							</Heading>
-						</Flex> */}
-						{/* <Text fontSize={['2xl', '2xl', '3xl', '3xl']} className='Full'>
-							Full Stack Developer
-						</Text> */}
-					</Flex>
+					
 					<Icon
 						className='darkMode'
 						size='1.6rem'
