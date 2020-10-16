@@ -14,25 +14,27 @@ const FrontEnd = () => {
 			<Flex
 				direction={ ['column', 'column', 'column', 'row'] }
 				textAlign='center'
+				align='center'
 			>
 				{ frontEnd.map((project, index) => (
 					<Box
 						key={ index }
-						w={ ['100%', '100%', '100%', '30%'] }
-						m={ ['10% 0', '0 2%'] }
+						w={ ['90%', '70%', '70%', '30%'] }
+						m={ ['12% 0', '12% 0', '12% 0', '0 2%'] }
 						
 					>
 						<Heading whiteSpace='nowrap'>{ project.name }</Heading>
-						<Box
+						{/* <Box
 							// position='fixed'
 							// id='Images'
 							// rounded='md'
 							// marginBottom='52%'
 					
-						>
+					
+						> */}
 							<Image objectFit='contain' className='bottom' src={ project.image } />
 							
-						</Box>
+						{/* </Box> */}
 						<Flex
 							wrap='wrap'
 							justify='center'

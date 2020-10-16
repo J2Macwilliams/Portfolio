@@ -10,16 +10,18 @@ const FullStack = () => {
 	
 	return (
 		<Box zIndex='.7'
+		w='100%'
 		>
 			<Flex
 				direction={ ['column', 'column', 'column', 'row'] }
 				textAlign='center'
+				align='center'
 			>
 				{ fullStack.map((project, index) => (
 					<Box
 						key={ index }
 						w={ ['100%', '100%', '100%', '30%'] }
-						m={ ['10% 0', '0 2%'] }
+						m={ ['12% 0', '12% 0', '12% 0', '0 2%'] }
 						
 					>
 						<Heading whiteSpace='nowrap'>{ project.name }</Heading>

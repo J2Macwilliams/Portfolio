@@ -15,7 +15,7 @@ export const frontEnd = [{
 }, {
   name: "Github User Card",
   image: github,
-  skills: ["React", "Responsive Design", "Material-UI"],
+  skills: ["React", "Material-UI"],
   links: {
     notion: "https://www.notion.so/The-Garden-of-Knowledge-c6fe89f6e98d493fa597de84a8bd6818",
     github: "https://github.com/J2Macwilliams/React-Github-User-Card",
@@ -24,7 +24,7 @@ export const frontEnd = [{
 }, {
   name: "Photo of the Day",
   image: nasa,
-  skills: ["React", "Typescript", "Eslint", "Material-UI"],
+  skills: ["React", "Typescript", "Material-UI"],
   links: {
     github: "https://github.com/J2Macwilliams/Nasa-apod-TS",
     site: "https://nasa-photography.netlify.app/",

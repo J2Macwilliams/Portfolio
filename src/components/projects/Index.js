@@ -12,11 +12,13 @@ import '../../App.css';
 const Index = () => {
   let { path, url } = useRouteMatch();
   return (
-    <div>
+    <Box
+    marginTop={['25%','25%', '25%', 0]}
+    >
       <Flex justify='center' >
         <Box 
-        width={['80%','60%' ,'40%' ,'30%']}
-        marginBottom=' 2%'
+        width={['','' ,'' ,'30%']}
+        marginBottom={['','','','2%']}
         >
           <Flex className='pflex' justify='space-between' alignItems='center'>
           <NavLink
@@ -47,7 +49,7 @@ const Index = () => {
           <FrontEnd />
         </Route>
       </Switch>
-    </div>
+    </Box>
   )
 }
 

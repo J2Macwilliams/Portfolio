@@ -23,7 +23,7 @@ links: {
 name: "D8Picker",
 image1: d8splash, 
 image2: d8apply,
-skills: ["React", "ContextAPI", "Node.js" , "Express.js", "Knex.js", "GoogleAPI", "Heroku"],
+skills: ["React", "ContextAPI", "Node.js" , "Express.js", "Knex.js", "GoogleAPI"],
 description: "Aperiodic Recurrence Scheduler",
 links: {
   notion: "https://www.notion.so/D8-Picker-School-Calendar-945247d05459402199c00843664fb4d1",
@@ -35,7 +35,7 @@ links: {
 name: "Journey2",
 image1: vacations, 
 image2: dates,
-skills: ["React", "Node.js" , "GraphQL" , "Prisma", "Apollo", "PostreSQL", "Heroku","Jest", "Material-UI" ],
+skills: ["React", "Node.js" , "GraphQL" , "Prisma", "Apollo", "PostreSQL", "Jest", "Material-UI" ],
 description: "Vacation Budget Planner",
 links: {
   notion: "https://www.notion.so/Vacation-Planner-e81c29178ad8410eb10f298e4f6d5860",
