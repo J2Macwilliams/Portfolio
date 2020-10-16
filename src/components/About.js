@@ -53,7 +53,7 @@ const About = () => {
 					From the entertainment and restaurant industry to Software Engineer,<br/>
 					I am a jack of many trades. <br /><br />Passionate about { '' }
 					<Typical
-						steps={ ['teamwork.', 1000, 'knitting.', 1000, 'producing.', 1000, 'brewing.', 1000, 'creativity.', 1000, 'disc golf.', 1000, 'photography', 1000, 'food!', 1000, '& delivering amazing projects.', 1500] }
+						steps={ ['teamwork.', 1000, 'knitting.', 1000, 'producing.', 1000, 'brewing.', 1000, 'creativity.', 1000, 'disc golf.', 1000, 'photography.', 1000, 'food!', 1000, '& delivering amazing projects.', 1500] }
 						loop={ Infinity }
 					/>
 					<br />Dream. Plan. Execute. Deliver. <br />Rinse &amp; Repeat!
