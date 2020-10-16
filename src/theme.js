@@ -11,18 +11,18 @@ export default  {
 		xs: '0.75rem',
 		sm: '0.9rem',
 		md: '1rem',
-		lg: '1.15rem',
-		xl: '1.25rem',
-		'2xl': '1.5rem',
-		'3xl': '1.875rem',
+		lg: '1.25rem',
+		xl: '1.5rem',
+		'2xl': '1.75rem',
+		'3xl': '2rem',
 		'4xl': '2.25rem',
-		'5xl': '3rem',
-		'6xl': '4rem',
+		'5xl': '2.5rem',
+		'6xl': '347rem',
 	},
 	colors: {
         ...theme.colors,
         
 	},
-	breakpoints: ["30em", "48em", "62em", "80em"],
+	breakpoints: ["480px", "768px", "1025px", "1281px"],
 };
 
