@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 
-import { Text,  Box, Flex, Heading } from '@chakra-ui/core';
-
+import { Text, Flex, Heading } from '@chakra-ui/core';
+import Typical from 'react-typical'
 import gsap from 'gsap';
 
+
 const Home = () => {
+
 	function intro() {
 		var t1 = gsap
 			.timeline()
@@ -12,7 +14,7 @@ const Home = () => {
 				duration: 1.5,
 				opacity: 0,
 				ease: 'bounce.out',
-				y: 400,
+				y: -400,
 			})
 			.from(
 				'.middle',
@@ -20,7 +22,7 @@ const Home = () => {
 					duration: 1.5,
 					opacity: 0,
 					ease: 'bounce.out',
-					y: 400,
+					y: -400,
 				},
 				'-=1'
 			)
@@ -30,31 +32,37 @@ const Home = () => {
 					duration: 1.25,
 					opacity: 0,
 					ease: 'bounce.out',
-					y: 400,
+					y: -400,
 				},
 				'-=1.25'
 			);
 		return t1;
 	}
-	function Full() {
-		var t2 = gsap.timeline().from('.full', {
-			duration: 2,
-			ease: 'back',
-			opacity: 0,
-			scale: 0,
-		});
-		return t2;
-	}
+	// function Full() {
+	// 	var t2 = gsap.timeline().from('.full', {
+	// 		duration: 2,
+	// 		ease: 'back',
+	// 		opacity: 0,
+	// 		scale: 1,
+	// 	});
+	// 	return t2;
+	// }
+	
 
 	useEffect(() => {
 		var master = gsap.timeline();
-		master.add(intro()).add(Full());
+		master.add(intro());
+		
 	}, []);
 
 	return (
 		<>
-			<Box>
-			<Flex direction='column' align='center'>
+			<Flex direction='column' 
+			align='center'
+			boxSizing='border-box'
+			w='100%'
+			h='50vh'
+			>
 						<Flex>
 							<Heading
 								m='1%'
@@ -85,10 +93,26 @@ const Home = () => {
 						marginLeft='2%'
 						className='full'
 					>
-						Full-Stack Engineer
+						Software Engineer
 					</Text>
+					
+						<Text
+					fontSize={['l', 'xl', '2xl', '2xl']}
+					marginTop='1%'
+					
+					>
+						<Typical 
+						
+						steps={['Full-Stack', 1000,'Front-End', 1000,'Back-End', 1000, 'Leader', 1000, 'Product Owner', 1000, 'Producer', 1000, 'Artist', 1000, 'Photographer', 1000, 'problem solver', 1000 ]}
+						loop={Infinity}
+						
+						/>
+
+					</Text>
+					{/* } */}
+				
 				</Flex>
-			</Box>
+			
 		</>
 	);
 };

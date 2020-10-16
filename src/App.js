@@ -4,7 +4,7 @@ import { Box, useColorMode, } from '@chakra-ui/core';
 
 import Home from './components/Home';
 import Projects from './components/projects/Index';
-import Contact from './components/About';
+import About from './components/About';
 
 import './App.css';
 import NavBar from './components/NavBar';
@@ -18,25 +18,22 @@ function App() {
 			<NavBar />
 			
 			<Box
-				flex='1 0 auto'
-				p={['30% 9% 10%','36% 9% 10%','28% 9% 10%','11% 5% 1%']}
 				
+				// p={['30% 9% 10%','36% 9% 10%','28% 9% 10%','11% 5% 1%']}
+				className='mainBox'
 				background={colorMode === 'light' ? '#f2f2f2' : '#363636'}
-			>
-				
+			>	
 				<Switch>
 					<Route path='/projects'>
 						<Projects />
 					</Route>
 					<Route path='/about'>
-						<Contact />
+						<About />
 					</Route>
 					<Route exact path='/'>
 						<Home />
 					</Route>
 				</Switch>
-				{/* </Box> */}
-				
 			</Box>
 
 			<Footer />
