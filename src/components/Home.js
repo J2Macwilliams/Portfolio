@@ -103,7 +103,7 @@ const Home = () => {
 					>
 						<Typical 
 						
-						steps={['Full-Stack', 1000,'Front-End', 1000,'Back-End', 1000, 'Leader', 1000, 'Product Owner', 1000, 'Producer', 1000, 'Artist', 1000, 'Photographer', 1000, 'problem solver', 1000 ]}
+						steps={['Full-Stack', 1000,'Front-End', 1000,'Back-End', 1000, 'Leader', 1000, 'Product Owner', 1000, 'Producer', 1000, 'Artist', 1000, 'Photographer', 1000, 'Problem-solver', 1000 ]}
 						loop={Infinity}
 						
 						/>
