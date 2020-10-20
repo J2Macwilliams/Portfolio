@@ -7,10 +7,11 @@ import { SiNotion } from 'react-icons/si';
 import './project_images.css';
 
 const FullStack = () => {
-	
+
 	return (
 		<Box zIndex='.7'
-		w='100%'
+			w='100%'
+			marginBottom={ ['2%', '2%', '2%', ''] }
 		>
 			<Flex
 				direction={ ['column', 'column', 'column', 'row'] }
@@ -21,24 +22,14 @@ const FullStack = () => {
 					<Box
 						key={ index }
 						w={ ['100%', '100%', '100%', '30%'] }
-						m={ ['12% 0', '12% 0', '12% 0', '0 2%'] }
-						
+						m={ ['10% 0', '10% 0', '10% 0', '0 2%'] }
+						bg='silver'
+						rounded='lg'
+						overflow='hidden'
 					>
-						<Heading whiteSpace='nowrap'>{ project.name }</Heading>
-						<Box
-							position='fixed'
-							id='Images'
-							rounded='md'
-							marginBottom='52%'
-					
-						>
-							<Image objectFit='contain' className='bottom' src={ project.image2 } />
-							<Image objectFit='contain' className='top' src={ project.image1 } />
-						</Box>
-						<Text
-							fontSize={ ['lg', 'xl'] }
-							fontStyle='italic'
-						>{ project.description }</Text>
+						<Image objectFit='contain' src={ project.image1 } />
+						<Heading whiteSpace='nowrap' color='black'>{ project.name }</Heading>
+						
 						<Flex
 							wrap='wrap'
 							justify='center'
@@ -59,13 +50,14 @@ const FullStack = () => {
 						<Flex justify='space-around'
 							m='2%'>
 							<Link href={ project.links.notion } target='_blank'>
-								<Box size={ ['1.6rem', '2.2rem'] } as={ SiNotion } m='5%' />
+								<Box size={ ['1.6rem', '2.2rem'] } color='black' as={ SiNotion } m='5%' />
 							</Link>
 							<Link href={ project.links.github } target='_blank'>
-								<Box size={ ['1.6rem', '2.2rem'] } as={ FaGithub } m='5%' />
+								<Box size={ ['1.6rem', '2.2rem'] } color='black' as={ FaGithub } m='5%' />
 							</Link>
 							<Link href={ project.links.site } target='_blank'>
 								<Icon
+								color='black'
 									size={ ['1.6rem', '2.2rem'] }
 									name='external-link'
 									m='5%'

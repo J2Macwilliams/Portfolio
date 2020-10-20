@@ -10,6 +10,8 @@ const FrontEnd = () => {
 	
 	return (
 		<Box zIndex='.7'
+		w='100%'
+		marginBottom={ ['2%', '2%', '2%', ''] }
 		>
 			<Flex
 				direction={ ['column', 'column', 'column', 'row'] }
@@ -19,22 +21,18 @@ const FrontEnd = () => {
 				{ frontEnd.map((project, index) => (
 					<Box
 						key={ index }
-						w={ ['90%', '70%', '70%', '30%'] }
-						m={ ['12% 0', '12% 0', '12% 0', '0 2%'] }
+						w={ ['100%', '100%', '100%', '30%'] }
+						m={ ['10% 0', '10% 0', '10% 0', '0 2%'] }
+						bg='silver'
+						rounded='lg'
+						overflow='hidden'
 						
 					>
-						<Heading whiteSpace='nowrap'>{ project.name }</Heading>
-						{/* <Box
-							// position='fixed'
-							// id='Images'
-							// rounded='md'
-							// marginBottom='52%'
-					
-					
-						> */}
-							<Image objectFit='contain' className='bottom' src={ project.image } />
-							
-						{/* </Box> */}
+						
+						
+							<Image objectFit='contain'  src={ project.image } />
+							<Heading whiteSpace='nowrap' color="black">{ project.name }</Heading>
+						
 						<Flex
 							wrap='wrap'
 							justify='center'
@@ -54,11 +52,13 @@ const FrontEnd = () => {
 						</Flex>
 						<Flex justify='space-around'
 							m='2%'>
+							
 							<Link href={ project.links.github } target='_blank'>
-								<Box size={ ['1.6rem', '2.2rem'] } as={ FaGithub } m='5%' />
+								<Box size={ ['1.6rem', '2.2rem'] } color='black' as={ FaGithub } m='5%' />
 							</Link>
 							<Link href={ project.links.site } target='_blank'>
 								<Icon
+								color='black'
 									size={ ['1.6rem', '2.2rem'] }
 									name='external-link'
 									m='5%'
