@@ -74,9 +74,9 @@ const NavBar = () => {
 					className='navLink'
 					activeClassName='activeNavButton'
 					exact
-					to='/about'
+					to='/skills'
 				>
-					About
+					Skills
 				</NavLink>
 			</Box>
 			<Box p='.5%' textAlign='right' w='100%'>
