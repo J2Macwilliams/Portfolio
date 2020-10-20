@@ -178,7 +178,7 @@ const Home = () => {
 					textAlign='center'
 					className='blurb'
 				>
-					Focused on building teams, adding value, and delivering creative projects. With a background in customer service and entertainment, I have a wealth of unique experiences and skills. Curious to learn and thrilled to create.
+					Focused on building teams, adding value, and delivering creative projects, I work the Full Stack. With a background in customer service and entertainment, I have a wealth of unique experiences and skills. Curious to learn and thrilled to create. Let's build something together.
 				</Text>
 
 			</Flex>
