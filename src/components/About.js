@@ -1,65 +1,22 @@
 import React from 'react';
 import {
-	useColorMode,
 	Heading,
 	Box,
 	Text,
 	Flex,
-	Image,
 } from '@chakra-ui/core';
 import Typical from 'react-typical'
 
-// import { Grade } from '@material-ui/icons';
-
-import Jeremy from '../assets/Jeremy.jpg';
-
 const About = () => {
-	const { colorMode } = useColorMode();
+
 	return (
 		<Flex
-			// border='1px solid green'
+			
 			direction='column'
-			justify='center'
+			justify='space-between'
 			align='center'
-
 			w={ ['100%', '100%', '100%', '80%'] }
-			p='1%'
 		>
-			<Flex p='1%' direction={ ['column', 'row', 'row', 'row'] }
-				// border='1px solid orange'
-				w='100%'
-				justify='space-between'
-				textAlign='center'
-			>
-				<Box
-					w={ ['100%', '50%', '40%', '20%'] }
-					m={ ['30% 0 20%', '0', '0', '0'] }
-				>
-					<Image
-						borderWidth='2px'
-						borderColor={ colorMode === 'light' ? 'black' : 'white' }
-						rounded='lg'
-						objectFit='contain' src={ Jeremy } alt='Jeremy McWilliams' />
-				</Box>
-
-				<Text
-					w={ ['100%', '45%', '59%', '75%'] }
-					rounded='md'
-					marginTop={ ['3%', 0, 0, 0] }
-					fontSize={ ['xl', 'lg', 'lg', 'xl'] }
-					fontWeight='bold'
-
-				>
-					From the entertainment and restaurant industry to Software Engineer,<br/>
-					I am a jack of many trades. <br /><br />Passionate about { '' }
-					<Typical
-						steps={ ['teamwork.', 1000, 'producing.', 1000, 'creativity.', 1000, 'communication.' , 1000, 'photography', 1000, 'delivering amazing projects.', 1500] }
-
-						loop={ Infinity }
-					/>
-					<br />Dream. Plan. Execute. Deliver. <br />Rinse &amp; Repeat!
-					</Text>
-			</Flex>
 			<Box
 				marginTop={ ['4%', '', '', ''] }
 			>
@@ -76,6 +33,18 @@ const About = () => {
 							</Text>
 
 			</Box>
+			
+				<Text
+					fontSize={ ['xl', 'lg', '2xl', '3xl'] }
+					marginTop='25%'
+				>I'm also passionate about <br/>
+					<Typical
+						steps={ [ 'crochet.', 1000, 'cooking.', 1000, 'photography.', 1000, 'travel.', 1000, 'disc golf.', 1000, 'wine.', 1000] }
+						loop={ Infinity }
+						wrapper='b'
+					/>
+				</Text>
+			
 		</Flex>
 	);
 };
