@@ -1,4 +1,4 @@
-import alive from '../assets/Life/alive.png';
+import alive from '../assets/Life/gameOLife.png';
 import github from '../assets/GitHub.png'
 import nasa from '../assets/nasa.jpeg'
 
