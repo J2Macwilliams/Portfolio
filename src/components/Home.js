@@ -53,11 +53,11 @@ const Home = () => {
 	function picture(){
 		var t3 = gsap.timeline().from('.me', {
 			duration:1.5,
-			ease: 'bounce.out',
-			y:-300,
+			ease: 'back',
+			// y:-300,
 			opacity: 0,
-			rotate: 360,
-			// scale:1,
+			// rotate: 360,
+			scale:1,
 		})
 		return t3
 	}
@@ -96,7 +96,7 @@ const Home = () => {
 		master
 		.add(intro())
 		.add(name(), '-=1.2')
-		.add(picture(), '-=1')
+		.add(picture(), '-=.5')
 		.add(Full(), '-=1')
 		.add(place(), '-=1')
 		.add(words(),'-=.75')
