@@ -1,74 +1,52 @@
-import React from 'react';
-import { fullStack } from '../../data/fullStack'
+import React, { useState } from 'react';
 
-import { FaGithub } from 'react-icons/fa';
-import { Flex, Box, Icon, Heading, Link, Text, Image } from '@chakra-ui/core';
-import { SiNotion } from 'react-icons/si';
-import './project_images.css';
+import { projectsData } from '../../data/projectsData'
+
+import { Grid, Box, Typography, Card, CardHeader, CardMedia, CardActions, Link, IconButton} from "@material-ui/core"
+import Notion from '../../assets/Notion.png'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkIcon from '@material-ui/icons/Link';
+import { useStyles } from './projectStyles'
 
 const FullStack = () => {
+	const classes = useStyles()
 
 	return (
-		<Box zIndex='.7'
-			w='100%'
-			marginBottom={ ['2%', '2%', '2%', ''] }
-		>
-			<Flex
-				direction={ ['column', 'column', 'column', 'row'] }
-				textAlign='center'
-				align='center'
-			>
-				{ fullStack.map((project, index) => (
-					<Box
-						key={ index }
-						w={ ['100%', '100%', '100%', '30%'] }
-						m={ ['10% 0', '10% 0', '10% 0', '0 2%'] }
-						bg='silver'
-						rounded='lg'
-						overflow='hidden'
-					>
-						<Image objectFit='contain' src={ project.image1 } />
-						<Heading whiteSpace='nowrap' color='black'>{ project.name }</Heading>
-						
-						<Flex
-							wrap='wrap'
-							justify='center'
-							bg='silver'
-							rounded='md'
-						>
+		<Grid container spacing={ 4 }>
+			{ projectsData.map((project, index) => (
+				<Grid item xs={ 12 } sm={ 12 } md={ 6 } lg={ 4 }>
+					<Card className={ classes.card }>
+						<CardHeader
+							title={ project.name }
+							subheader={project.type}
+						/>
+						<CardMedia className={ classes.media } image={ project.image } />
+						<Box className={ classes.skills }>
 							{ project.skills.map(skill => (
-								<Text
-									color='black'
-									fontSize={ ['sm', 'sm', 'md', 'lg'] }
-									m='0 1%'
-									p='1%'
+								<Typography
+									className={ classes.skill }
 								>
 									{skill }
-								</Text>
+								</Typography>
 							)) }
-						</Flex>
-						<Flex justify='space-around'
-							m='2%'>
-							<Link href={ project.links.notion } target='_blank'>
-								<Box size={ ['1.6rem', '2.2rem'] } color='black' as={ SiNotion } m='5%' />
-							</Link>
-							<Link href={ project.links.github } target='_blank'>
-								<Box size={ ['1.6rem', '2.2rem'] } color='black' as={ FaGithub } m='5%' />
-							</Link>
-							<Link href={ project.links.site } target='_blank'>
-								<Icon
-								color='black'
-									size={ ['1.6rem', '2.2rem'] }
-									name='external-link'
-									m='5%'
-								/>
-							</Link>
-						</Flex>
-					</Box>
-				)) }
-			</Flex>
+						</Box>
+						<CardActions >
+							<IconButton aria-label="SiteLink">
+								<Link href={ project.links.site } target='_blank' className={ classes.links }><LinkIcon /></Link>
+							</IconButton>
+							<IconButton aria-label="Github">
+								<Link href={ project.links.github } target='_blank' className={ classes.links }><GitHubIcon /></Link>
+							</IconButton>
+							{project.links.notion? <IconButton aria-label="Notion">
+								<Link href={ project.links.notion } target='_blank' className={ classes.links }><CardMedia component='img' image={ Notion } className={ classes.notion } /></Link>
+							</IconButton> : ""}
 
-		</Box>
+						</CardActions>
+
+					</Card>
+				</Grid>
+			)) }
+		</Grid>
 	);
 };
 
