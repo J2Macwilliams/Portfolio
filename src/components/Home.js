@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 
-import { Text, Flex, Heading, Image } from '@chakra-ui/core';
+import { Text, Flex, Box, Heading, Image } from '@chakra-ui/core';
 
 import gsap from 'gsap';
 import Jeremy from '../assets/Jeremy.jpg'
-
 
 const Home = () => {
 	function intro() {
@@ -50,14 +49,14 @@ const Home = () => {
 			);
 		return t2;
 	}
-	function picture(){
+	function picture() {
 		var t3 = gsap.timeline().from('.me', {
-			duration:1.5,
+			duration: 1.5,
 			ease: 'back',
 			// y:-300,
 			opacity: 0,
 			// rotate: 360,
-			scale:1,
+			scale: 1,
 		})
 		return t3
 	}
@@ -94,14 +93,14 @@ const Home = () => {
 	useEffect(() => {
 		var master = gsap.timeline();
 		master
-		.add(intro())
-		.add(name(), '-=1.2')
-		.add(picture(), '-=.5')
-		.add(Full(), '-=1')
-		.add(place(), '-=1')
-		.add(words(),'-=.75')
-		
-		;
+			.add(intro())
+			.add(name(), '-=1.2')
+			.add(picture(), '-=.5')
+			.add(Full(), '-=1')
+			.add(place(), '-=1')
+			.add(words(), '-=.75')
+
+			;
 
 	}, []);
 
@@ -118,67 +117,74 @@ const Home = () => {
 					// m='-1%'
 					fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
 				>Hello, I am</Text>
-				<Image 
-				className='me'
-				src={ Jeremy }
-					alt="Jeremy J McWilliams"
-					w={ ['60%', '60%', '40%', '20%'] }
-					borderRadius='50%'
-					boxShadow='5px 5px 5px grey'
-					// marginTop={['-17%','-18%','-8%',"-3%"]}
-				/>
 				<Flex
-				marginTop='2%'
+					direction='column'
+					align='center'
+					position='absolute'
+					top='15%'
+				// left='30%'
 				>
-					<Heading
-						m='1%'
-						fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
-						className='first'
+					<Image
+						className='me'
+						src={ Jeremy }
+						alt="Jeremy J McWilliams"
+						w={ ['60%', '60%', '40%', '20%'] }
+						borderRadius='50%'
+						boxShadow='5px 5px 5px grey'
+					// marginTop={['-17%','-18%','-8%',"-3%"]}
+					/>
+					<Flex
+						marginTop='2%'
 					>
-						Jeremy
+						<Heading
+							m='1%'
+							fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
+							className='first'
+						>
+							Jeremy
 							</Heading>
-					<Heading
-						m='1%'
-						fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
-						className='middle'
-					>
-						J.
+						<Heading
+							m='1%'
+							fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
+							className='middle'
+						>
+							J.
 							</Heading>
 
-					<Heading
-						m='1%'
-						fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
-						className='last'
-					>
-						McWilliams
+						<Heading
+							m='1%'
+							fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
+							className='last'
+						>
+							McWilliams
 							</Heading>
-				</Flex>
+					</Flex>
 
-				<Heading
-					fontSize={ ['xl', '2xl', '3xl', '4xl'] }
-					marginLeft='2%'
-					className='full'
-					textAlign='center'
-				>
-					Software Engineer
+					<Heading
+						fontSize={ ['xl', '2xl', '3xl', '4xl'] }
+						margin='1% 2%'
+						className='full'
+						textAlign='center'
+					>
+						Full-Stack Software Engineer
 					</Heading>
-				<Text className='location'
-					fontSize={ ['l', 'xl', '2xl', 'xl'] }
-					fontWeight='bold'
+					<Text className='location'
+						fontSize={ ['l', 'xl', '2xl', 'xl'] }
+						fontWeight='bold'
+						margin='1%'
+					>San Francisco Bay Area</Text>
 
-				>San Francisco Bay Area</Text>
 
+					<Text
+						fontSize={ ['l', 'xl', '2xl', 'xl'] }
 
-				<Text
-					fontSize={ ['l', 'xl', '2xl', 'xl'] }
-					
-					width={ ['100%', '100%', '100%', '60%'] }
-					textAlign='center'
-					className='blurb'
-				>
-					Focused on building teams, adding value, and delivering creative projects, I work the Full Stack. With a background in customer service and entertainment, I have a wealth of unique experiences and skills. Curious to learn and thrilled to create. Let's build something together.
+						width={ ['100%', '100%', '100%', '60%'] }
+						textAlign='center'
+						className='blurb'
+					>
+						Focused on building teams, adding value, and delivering creative projects. Curious to learn and thrilled to create. Let's build something together.
 				</Text>
-
+				</Flex>
 			</Flex>
 
 		</>
