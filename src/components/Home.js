@@ -134,7 +134,7 @@ const Home = () => {
 					// marginTop={['-17%','-18%','-8%',"-3%"]}
 					/>
 					<Flex
-						marginTop='2%'
+						marginTop='1%'
 					>
 						<Heading
 							m='1%'
