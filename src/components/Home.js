@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Text, Flex, Box, Heading, Image } from '@chakra-ui/core';
+import { Text, Flex, Heading, Image } from '@chakra-ui/core';
 
 import gsap from 'gsap';
 import Jeremy from '../assets/Jeremy.jpg'
@@ -121,7 +121,7 @@ const Home = () => {
 					direction='column'
 					align='center'
 					position='absolute'
-					top='15%'
+					top='18%'
 				// left='30%'
 				>
 					<Image
@@ -162,7 +162,7 @@ const Home = () => {
 
 					<Heading
 						fontSize={ ['xl', '2xl', '3xl', '4xl'] }
-						margin='1% 2%'
+						margin='.5% 2%'
 						className='full'
 						textAlign='center'
 					>
@@ -171,7 +171,7 @@ const Home = () => {
 					<Text className='location'
 						fontSize={ ['l', 'xl', '2xl', 'xl'] }
 						fontWeight='bold'
-						margin='1%'
+						margin='.5%'
 					>San Francisco Bay Area</Text>
 
 
