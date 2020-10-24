@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
-import theme from './theme';
+// import { ThemeProvider} from '@material-ui/core/styles';
+// import theme from './theme';
 // import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 	<Router>
-		<ThemeProvider theme={theme}>
-			<ColorModeProvider>
-				<CSSReset />
+		
+			
 				<App />
-			</ColorModeProvider>
-		</ThemeProvider>
+
+		
 	</Router>,
 	document.getElementById('root')
 );
