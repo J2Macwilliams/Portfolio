@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Box, useColorMode, } from '@chakra-ui/core';
 
 import Home from './components/Home';
-import Projects from './components/projects/Index';
+import Projects from './components/Projects/Index';
 import About from './components/About';
 
 import './App.css';
