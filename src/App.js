@@ -18,7 +18,6 @@ function App() {
 			<NavBar />
 			
 			<Box
-				
 				// p={['30% 9% 10%','36% 9% 10%','28% 9% 10%','11% 5% 1%']}
 				className='mainBox'
 				background={colorMode === 'light' ? '#f2f2f2' : '#363636'}

@@ -115,7 +115,7 @@ const Home = () => {
 				h='60vh'
 			>
 				<Text className='greeting'
-					m='-1%'
+					// m='-1%'
 					fontSize={ ['2xl', '4xl', '5xl', '5xl'] }
 				>Hello, I am</Text>
 				<Image 
@@ -125,10 +125,8 @@ const Home = () => {
 					w={ ['60%', '60%', '40%', '20%'] }
 					borderRadius='50%'
 					boxShadow='5px 5px 5px grey'
-					marginTop={['-17%','-18%','-8%',"-3%"]}
+					// marginTop={['-17%','-18%','-8%',"-3%"]}
 				/>
-
-
 				<Flex
 				marginTop='2%'
 				>
