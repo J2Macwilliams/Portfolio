@@ -121,7 +121,7 @@ const Home = () => {
 					direction='column'
 					align='center'
 					position='absolute'
-					top='18%'
+					top='19%'
 				// left='30%'
 				>
 					<Image
