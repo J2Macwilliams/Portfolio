@@ -1,28 +1,32 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Box, useColorMode, } from '@chakra-ui/core';
-
-import Home from './components/Home';
-import Projects from './components/projects/Index';
-import About from './components/About';
+// import { Box, useColorMode, } from '@chakra-ui/core';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Index';
+import About from './components/Home/About';
+import NavBar from './components/Bars/NavBar';
+// import Footer from './components/Bars/Footer';
 
 import './App.css';
-import NavBar from './components/NavBar';
+// import { Box, makeStyles } from '@material-ui/core'
 
-import Footer from './components/Footer';
-
+// const useStyles = makeStyles(() => ({
+// 	app: {
+// 		display: "flex",
+// 		flexDirection: "column",
+// 		// width: "100%"
+// 	},
+// 	//  mainBox :{
+// 	// 	flex: "0 0 auto"
+// 	//  }
+// }));
 function App() {
-	const { colorMode } = useColorMode();
+	// const classes = useStyles();
+	// const { colorMode } = useColorMode();
 	return (
 		<div className='App'>
 			<NavBar />
-			
-			<Box
-				
-				// p={['30% 9% 10%','36% 9% 10%','28% 9% 10%','11% 5% 1%']}
-				className='mainBox'
-				background={colorMode === 'light' ? '#f2f2f2' : '#363636'}
-			>	
+			<div className='mainBox'>
 				<Switch>
 					<Route path='/projects'>
 						<Projects />
@@ -34,9 +38,8 @@ function App() {
 						<Home />
 					</Route>
 				</Switch>
-			</Box>
-
-			<Footer />
+			</div>
+			{/* <Footer /> */}
 		</div>
 	);
 }
