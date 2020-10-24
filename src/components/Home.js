@@ -127,8 +127,6 @@ const Home = () => {
 					boxShadow='5px 5px 5px grey'
 					// marginTop={['-17%','-18%','-8%',"-3%"]}
 				/>
-
-
 				<Flex
 				marginTop='2%'
 				>
